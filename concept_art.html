@@ -6,12 +6,12 @@
     <title>Document</title>
     <style>
         canvas{
-			border: black 1px solid;
+			border: rgb(255, 0, 0) 10px solid;
 			}
     </style>
 </head>
 <body>
-    <canvas id="canvas" width="1000" height="800">
+    <canvas id="canvas" width="1000" height="900">
 		</canvas>
         <script>
 				const canvas = document.getElementById("canvas");
@@ -20,8 +20,143 @@
                 //draw the score box
                 ctx.fillStyle = "black";
                 ctx.beginPath();                
-                ctx.moveTo(100,100,100,100);
-                ctx.lineTo(100,10,100,100);
+                ctx.rect(0,0,200,100);
+                ctx.stroke();
+                
+                //draw the lives box
+                ctx.fillStyle = "black";
+                ctx.beginPath();                
+                ctx.rect(800,0,200,100);
+                ctx.stroke();
+
+                //draw the edge of the road
+                ctx.fillStyle = "black";
+                ctx.beginPath();
+                ctx.rect(0,120,1000,650);
+                ctx.stroke();
+
+                //draw the upper middle line of the road
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(0,450);
+                ctx.lineTo(50,450);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(100,450);
+                ctx.lineTo(150,450);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(200,450);
+                ctx.lineTo(250,450);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(300,450);
+                ctx.lineTo(350,450);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(400,450);
+                ctx.lineTo(450,450);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(500,450);
+                ctx.lineTo(550,450);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(600,450);
+                ctx.lineTo(650,450);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(700,450);
+                ctx.lineTo(750,450);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(800,450);
+                ctx.lineTo(850,450);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(900,450);
+                ctx.lineTo(950,450);
+                ctx.stroke();
+
+                //draw the lower middle line of the road
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(0,500);
+                ctx.lineTo(50,500);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(100,500);
+                ctx.lineTo(150,500);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(200,500);
+                ctx.lineTo(250,500);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(300,500);
+                ctx.lineTo(350,500);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(400,500);
+                ctx.lineTo(450,500);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(500,500);
+                ctx.lineTo(550,500);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(600,500);
+                ctx.lineTo(650,500);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(700,500);
+                ctx.lineTo(750,500);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(800,500);
+                ctx.lineTo(850,500);
+                ctx.stroke();
+
+                ctx.fillStyle = "yellow";
+                ctx.beginPath();
+                ctx.moveTo(900,500);
+                ctx.lineTo(950,500);
+                ctx.stroke();
+                
         </script>        
 </body>
 </html>
