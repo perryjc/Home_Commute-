@@ -18,17 +18,41 @@
 				const ctx = canvas.getContext("2d");
 
                 //draw the score box
+                    //box
                 ctx.fillStyle = "black";
                 ctx.beginPath();                
                 ctx.rect(0,0,200,100);
                 ctx.stroke();
-                
+                    //words/numbers
+                ctx.fillStyle = "black";
+                ctx.beginPath();
+                ctx.moveTo(50,60);
+                ctx.lineTo(50,90);
+                ctx.stroke();
+
+                ctx.fillStyle = "black";
+                ctx.beginPath();
+                ctx.ellipse(70, 75, 10, 15, 0, 0, 2*Math.PI);
+                ctx.stroke();
+
+                ctx.fillStyle = "black";
+                ctx.beginPath();
+                ctx.ellipse(100, 75, 10, 15, 0, 0, 2*Math.PI);
+                ctx.stroke();
+
+                ctx.fillStyle = "black";
+                ctx.beginPath();
+                ctx.ellipse(130, 75, 10, 15, 0, 0, 2*Math.PI);
+                ctx.stroke();
+
                 //draw the lives box
+                    //box
                 ctx.fillStyle = "black";
                 ctx.beginPath();                
                 ctx.rect(800,0,200,100);
                 ctx.stroke();
-
+                    //hearts
+                ctx.fillStyle = "black"
                 //draw the edge of the road
                 ctx.fillStyle = "black";
                 ctx.beginPath();
