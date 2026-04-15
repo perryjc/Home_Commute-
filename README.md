@@ -10,9 +10,9 @@
 
 ## Objectives:
 > The player will drive increasingly faster while doging cars going at diffrent speeds.
-> The score will increase as time goes on (like chrome dino game). We may add a feture
-> Where a cut scean will play at a certain score, but most likely just infinite.
-> Their will also be a high score system. 
+> The score will increase as time goes on (like chrome dino game). We may add a feature
+> Where a cut scene will play at a certain score, but most likely just infinite.
+> There will also be a high score system. 
 
 ## Control:
 > The player will control the car useing arrow keys. left and right for x-axis and
