@@ -1,7 +1,7 @@
 # Commute Home
 
 ## Game vibe:
-> Our game will be a top down, retro, raceing game. 
+> Our game will be a top down, retro, racing game. 
 > Their will be infinite (?) side scrolling.
 > The player will control a car.
 
