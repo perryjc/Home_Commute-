@@ -1,33 +1,11 @@
 //move the player
-/*
-function keyDownHandler(e) {
-  if (e.key === "Down" || e.key === "ArrowDown") {
-    downPressed = true;
-  } else if (e.key === "Up" || e.key === "ArrowUp") {
-    upPressed = true;
-  }
-}
 
-function keyUpHandler(e) {
-  if (e.key === "Down" || e.key === "ArrowDown") {
-    downPressed = false;
-  } else if (e.key === "Up" || e.key === "ArrowUp") {
-    downPressed = false;
-  }
-}
-*/
-let x = 0;
 let y = 0;
-let vx = 7;
 let vy = 7;
 let gravity = 1;
 
 function move(){
     ctx.clearRect(0, 0, 1500,1500);
-
-    if(x > 550 || x < 0){
-        vx = vx *-1;
-    }
 
     if(y > 550 || y < 0){
         vy = vy *-1;
