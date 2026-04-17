@@ -1,23 +1,23 @@
 // just grabbed from the astroid game
-let shipTimer = 0;
-let junkTimer = 0;
+let playerTimer = 0;
+let carTimer = 0;
 let gameRunning = true;
 
 function animate() {
   if(gameRunning){
-    shipTimer += 1;
-    junkTimer += 1;
+    playerTimer += 1;
+    carTimer += 1;
 
     // Update positions
-    orbitShips();
-    moveJunk()
+    // orbitShips();
+    // moveJunk()
     
     // Draw everything
     drawBackground();
-    drawShipsAndJunk();
+    //drawShipsAndJunk();
 
     //spawn new ships and junk
-    if(shipTimer == 200){
+    if(carTimer == 200){
       addNewShip();
       shipTimer = 0;
     }
