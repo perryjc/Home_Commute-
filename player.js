@@ -17,3 +17,13 @@ function keyUpHandler(e) {
 
 document.addEventListener("keydown", keyDownHandler);
 document.addEventListener("keyup", keyUpHandler);
+
+//the player
+            ctx.fillStyle = "green"
+            ctx.fillRect(100, 600,70,30);
+
+            ctx.fillStyle = "green"
+            ctx.fillRect(90, 595,40,40);
+
+            ctx.fillStyle = "green"
+            ctx.fillRect(170, 595,40,40);
