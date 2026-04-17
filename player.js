@@ -23,7 +23,7 @@ let vy = 7;
 let gravity = 1;
 
 function move(){
-    ctx.clearRect(0, 0, 600,600);
+    ctx.clearRect(0, 0, 1500,1500);
 
     if(x > 550 || x < 0){
         vx = vx *-1;
@@ -33,7 +33,7 @@ function move(){
         vy = vy *-1;
     }
         //the player
-    ctx.fillStyle = "green"
+            ctx.fillStyle = "green"
             ctx.fillRect(100, 600,70,30);
 
             ctx.fillStyle = "green"
@@ -55,11 +55,5 @@ function handleKeydown(e){
     else if(e.key == "ArrowUp"){
         y = y - vy;
     }
-    else if(e.key == "ArrowLeft"){
-        x = x - vx;
-    }
-    else if(e.key == "ArrowRight"){
-        x = x + vx;
-}
 }
 document.addEventListener('keydown', handleKeydown);
