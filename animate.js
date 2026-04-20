@@ -2,16 +2,18 @@ function animate() {
   if (gameRunning) {
     gameScore += 1;
     carTimer += 1;
+    // make cars faster over time:
+    // gameSpeed += 0.1;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // 1. Draw the Road/Background (handled in art.js)
+    // Draw the Background (art.js)
     drawBackground(ctx); 
 
-    // 2. Handle Player
+    // Draw Player
     player.draw(ctx);
 
-    // 3. add new car every 100 ticks
+    // Add new car every 100 ticks
     if (carTimer > 100) {
       spawnTraffic();
       carTimer = 0;
@@ -24,7 +26,7 @@ function animate() {
 
     checkCollisions();
 
-    // 4. Add something to Update the UI (score and lives) here:
+    // Add something to Update the UI (score and lives) here:
     // uiFuction(); (art.js)
 
     // Debug shi:

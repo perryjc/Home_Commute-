@@ -1,7 +1,7 @@
 class Player {
     constructor() {
         this.laneIndex = 1; // Start in the second lane
-        this.x = 100;
+        this.x = 600; // Place holder, add side to side movement
         this.y = LANES[this.laneIndex];
         this.width = 60;
         this.height = 30;

@@ -1,7 +1,4 @@
-// collisions.js
-
 function checkCollisions() {
-    // We loop through the enemies array (from enemy.js)
     for (let i = 0; i < enemies.length; i++) {
         let car = enemies[i];
 
@@ -22,16 +19,16 @@ function checkCollisions() {
 function handleHit(index) {
     console.log("CRASH!");
 
-    // 1. Remove the car we hit so we don't keep colliding with it
+    // Remove the dead car
     enemies.splice(index, 1);
 
-    // 2. Take away a life
+    // Take away a life
     lives -= 1;
 
-    // 3. Reset the game speed (the "slow down" effect)
+    // slowdown the game after crash (broken)
     gameSpeed = 3; 
 
-    // 4. Check for Game Over
+    // Check for Game Over
     if (lives <= 0) {
         gameOver();
     }
