@@ -14,3 +14,12 @@ function gameOver() {
     alert("GAME OVER. SCORE:" + gameScore);
     location.reload(); // Restarts the game
 }
+
+// "p" to pause
+function handleKeyDown(e){
+    if(e.key === 'p' || e.key === 'P') {
+        gameRunning = !gameRunning;
+    }
+}
+
+document.addEventListener('keydown', handleKeyDown);
