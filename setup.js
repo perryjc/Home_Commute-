@@ -7,11 +7,9 @@ const LANES = [150, 250, 450, 550]; // Y-coordinates for the 4 lanes in your art
 let gameRunning = true;
 let gameSpeed = 3;
 let gameScore = 0;
-let gameOver = false;
 let lives = 4;
 
 function gameOver() {
-    gameOver = true;
     gameRunning = false;
     alert("GAME OVER. SCORE:" + gameScore);
     location.reload(); // Restarts the game
