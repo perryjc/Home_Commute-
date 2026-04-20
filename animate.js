@@ -1,36 +1,38 @@
-// just grabbed from the astroid game
-let playerTimer = 0;
-let carTimer = 0;
-let gameRunning = true;
-
 function animate() {
-  if(gameRunning){
-    playerTimer += 1;
+  if (gameRunning) {
+    gameScore += 1;
     carTimer += 1;
 
-    // Update positions
-    // orbitShips();
-    // moveJunk()
-    
-    // Draw everything
-    drawBackground();
-    //drawShipsAndJunk();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    //spawn new ships and junk
-    if(carTimer == 200){
-      addNewShip();
-      shipTimer = 0;
+    // 1. Draw the Road/Background (handled in art.js)
+    drawBackground(ctx); 
+
+    // 2. Handle Player
+    player.draw(ctx);
+
+    // 3. add new car every 100 ticks
+    if (carTimer > 100) {
+      spawnTraffic();
+      carTimer = 0;
     }
 
-    if(junkTimer == 100){
-      addNewJunk();
-      junkTimer = 0;
-    }
+    enemies.forEach((enemy) => {
+      enemy.update();
+      enemy.draw(ctx);
+    });
 
-    //check collisions
-    checkCollisions()
+    checkCollisions();
+
+    // 4. Add something to Update the UI (score and lives) here:
+    // uiFuction(); (art.js)
+
+    // Debug shi:
+    console.log("Score:" + gameScore + " Lives:" + lives + " Speed:" + gameSpeed);
   }
+
   requestAnimationFrame(animate);
+
 }
 
 // Start the game

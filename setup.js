@@ -3,30 +3,14 @@ const ctx = canvas.getContext("2d");
 
 //Defineing Objects
 //car is the enemy
-const cars = [];
+const LANES = [150, 250, 450, 550]; // Y-coordinates for the 4 lanes in your art
+let gameRunning = true;
+let gameSpeed = 3;
+let gameScore = 0;
+let lives = 4;
 
-const player = {
-  type: "Fiat",
-  model: "500",
-  color: "white"
-};
-
-function addNewCar(){
-    cars.push(
-        {
-            x: 800,
-            y: Math.random()*800,
-            dx: -1,
-            dy: Math.random()*2-1,
-            size: Math.random()*2 + 2,
-            alive:true
-        }
-    )
-}
-
-function moveCars(){
-    cars.forEach(j => {
-        j.x += j.dx;
-        j.y += j.dy;
-    });
+function gameOver() {
+    gameRunning = false;
+    alert("GAME OVER. SCORE:" + gameScore);
+    location.reload(); // Restarts the game
 }

@@ -1,37 +1,37 @@
-//move the player
-
-let y = 0;
-let vy = 7;
-let gravity = 1;
-
-function move(){
-    ctx.clearRect(0, 0, 1500,1500);
-
-    if(y > 550 || y < 0){
-        vy = vy *-1;
+class Player {
+    constructor() {
+        this.laneIndex = 1; // Start in the second lane
+        this.x = 100;
+        this.y = LANES[this.laneIndex];
+        this.width = 60;
+        this.height = 30;
+        this.color = "green";
     }
-        //the player
-            ctx.fillStyle = "green"
-            ctx.fillRect(100, 600,70,30);
 
-            ctx.fillStyle = "green"
-            ctx.fillRect(90, 595,40,40);
-
-            ctx.fillStyle = "green"
-            ctx.fillRect(170, 595,40,40);
-    requestAnimationFrame(move);
-}
-
-move();
-
-//event handler
-function handleKeydown(e){
-    console.log(e.key);
-    if(e.key == "ArrowDown"){
-        y = y + vy;
+    draw(ctx) {
+        ctx.fillStyle = this.color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
     }
-    else if(e.key == "ArrowUp"){
-        y = y - vy;
+
+    moveUp() {
+        if (this.laneIndex > 0) {
+            this.laneIndex--;
+            this.y = LANES[this.laneIndex];
+        }
+    }
+
+    moveDown() {
+        if (this.laneIndex < LANES.length - 1) {
+            this.laneIndex++;
+            this.y = LANES[this.laneIndex];
+        }
     }
 }
-document.addEventListener('keydown', handleKeydown);
+
+const player = new Player();
+
+// Input handling
+window.addEventListener('keydown', (e) => {
+    if (e.key === "ArrowUp") player.moveUp();
+    if (e.key === "ArrowDown") player.moveDown();
+});
