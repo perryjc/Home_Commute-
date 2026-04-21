@@ -9,3 +9,4 @@
 - [ ] Add high score system
 - [ ] Add menu and instructions
 - [ ] MAKE IT NOT LOOK LIKE SOMEONE GAVE A 5 YEAR-OLD ACCESS TO MICROSOFT PAINT
+- [ ] add more line to the road so that is is acually a road and not a gray plane with colored rectangles
