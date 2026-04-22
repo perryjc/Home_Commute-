@@ -4,3 +4,15 @@ function drawBackground() {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = '#4a90e2';
 }
+
+function drawLines() {
+  ctx.strokeStyle = '#ffea00';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  LANES.forEach(laneY => {
+    ctx.moveTo(0, laneY);
+    ctx.lineTo(canvas.width, laneY);
+  });
+  ctx.stroke();
+}
+
