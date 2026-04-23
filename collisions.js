@@ -25,8 +25,8 @@ function handleHit(index) {
     // Take away a life
     lives -= 1;
 
-    // slowdown the game after crash (broken)
-    gameSpeed = 3; 
+    // slowdown the game after crash
+    gameSpeed = gameSpeed / 3;
 
     // Check for Game Over
     if (lives <= 0) {
