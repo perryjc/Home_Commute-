@@ -3,7 +3,7 @@ const ctx = canvas.getContext("2d");
 
 //Defineing Objects
 //car is the enemy
-const LANES = [150, 250, 450, 550]; // Y-coordinates for the 4 lanes in your art
+const LANES = [100, 250, 450, 650]; // Y-coordinates for the Lanes
 let gameRunning = true;
 let gameSpeed = 3;
 let gameScore = 0;
