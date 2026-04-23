@@ -24,7 +24,9 @@ let y0 = 200;
 
 function drawLines() {
   ctx.strokeStyle = '#ffea00';
-  ctx.lineWidth = 3;
+  ctx.lineWidth = 5;
+  //yellow lines
+  //middle lines
   //line 1
   ctx.beginPath();
   ctx.moveTo(0, 350);
@@ -35,6 +37,21 @@ function drawLines() {
   ctx.beginPath();
   ctx.moveTo(0, 375);
   ctx.lineTo(1280, 375);
+  ctx.stroke();
+
+  //line on bottom and top
+  ctx.strokeStyle = '#ffea00';
+  ctx.lineWidth = 3;
+  //line 1
+  ctx.beginPath();
+  ctx.moveTo(0, 50);
+  ctx.lineTo(1280, 50);
+  ctx.stroke();
+
+  //line 2
+  ctx.beginPath();
+  ctx.moveTo(0, 750);
+  ctx.lineTo(1280, 750);
   ctx.stroke();
   
 
@@ -126,6 +143,9 @@ function drawLines() {
   ctx.fillRect(x13, y1, 50, 10);
 
 }
+
+// Draw hearts
+
   
 
 function drawBackground() {
