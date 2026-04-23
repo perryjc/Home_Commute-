@@ -28,17 +28,6 @@ class Enemy {
     }
 }
 
-//faster over time (If Statements)
-while (true){ //make this stop and reset when die
-    if (SpeedTimer => 60){
-        Enemy.speed = Enemy.speed + 3;
-        SpeedTimer = 0;
-    }
-    else if (SpeedTimer <= 60){
-        SpeedTimer = SpeedTimer + 3;
-    }
-}
-
 function spawnTraffic() {
     const randomLane = Math.floor(Math.random() * LANES.length);
     // Lanes 0 & 1 move left (-1), Lanes 2 & 3 move right (1)
