@@ -33,7 +33,7 @@ function drawPauseBackground() {
   ctx.fillText(gameScore, 550, 250);
     //High Score numbers
   ctx.fillStyle = "#000000";
-  ctx.fillText("1000", 580, 300);
+  ctx.fillText(gameHighScore, 580, 300);
     //Lives Numbers
   ctx.fillStyle = "#000000";
   ctx.fillText(lives, 490, 350);  
