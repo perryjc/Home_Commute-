@@ -32,6 +32,6 @@ const player = new Player();
 
 // Input handling
 window.addEventListener('keydown', (e) => {
-    if (e.key === "ArrowUp") player.moveUp();
-    if (e.key === "ArrowDown") player.moveDown();
+    if (e.key === "W") player.moveUp();
+    if (e.key === "S") player.moveDown();
 });
