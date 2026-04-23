@@ -13,6 +13,9 @@ function animate() {
     // Draw Player
     player.draw(ctx);
 
+    // Draw the lines (art.js) doesn't work when called
+    drawLines(ctx);
+
     // Add new car every 100 ticks
     if (carTimer > 100) {
       spawnTraffic();
