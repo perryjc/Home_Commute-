@@ -1,6 +1,6 @@
 # TODO:
 
-- [x] Genueinly create a working prototype
+- [done] Genueinly create a working prototype
 - [ ] Add a screen lock feture (prevent arrow keys from scrolling) comment: What if we made it use WASD?
 - [ ] Add start/pause menu
 - [ ] At speed up feture

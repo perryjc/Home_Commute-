@@ -21,6 +21,7 @@ function gameOver() {
 function handleKeyDown(e){
     if(e.key === 'p' || e.key === 'P') {
         gameRunning = !gameRunning;
+        drawPauseBackground(); // Pause_menu.js
     }
 }
 
