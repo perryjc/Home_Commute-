@@ -8,6 +8,18 @@
 - [ ] Add side to side movement
 - [ ] Add difficulty selector (game speed faster)
 - [ ] Add high score system
+> gemini example:
+```
+// 1. Save a new high score
+let currentScore = 5000;
+localStorage.setItem('racingHighScore', currentScore);
+
+// 2. Retrieve it later (even after a reload)
+let savedHighScore = localStorage.getItem('racingHighScore');
+
+// Since localStorage only stores text, convert it back to a number
+let scoreAsNumber = parseInt(savedHighScore); 
+```
 - [ ] Add menu and instructions
 - [x] MAKE IT NOT LOOK LIKE SOMEONE GAVE A 5 YEAR-OLD ACCESS TO MICROSOFT PAINT
 - [x] add more lines to the road so that is is acually a road and not a gray plane with colored rectangles
