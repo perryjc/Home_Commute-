@@ -1,6 +1,8 @@
 // at the molment the only way to fill terminal is running drawBackground() in constle
 
 //variables
+
+//xs
 let x1 = 0;
 let x2 = 100;
 let x3 = 200;
@@ -15,6 +17,11 @@ let x11 = 1000;
 let x12 = 1100;
 let x13 = 1200;
 
+//ys
+let y1 = 550;
+let y0 = 200;
+
+
 function drawLines() {
   ctx.strokeStyle = '#ffea00';
   ctx.lineWidth = 3;
@@ -26,8 +33,8 @@ function drawLines() {
 
   //line 2 
   ctx.beginPath();
-  ctx.moveTo(0, 450);
-  ctx.lineTo(1280, 450);
+  ctx.moveTo(0, 375);
+  ctx.lineTo(1280, 375);
   ctx.stroke();
   
 
@@ -35,19 +42,19 @@ function drawLines() {
   ctx.fillStyle = '#ffffff';
 
   //line 1
-  ctx.fillRect(x1, 175, 50, 10);
-  ctx.fillRect(x2, 175, 50, 10);
-  ctx.fillRect(x3, 175, 50, 10);
-  ctx.fillRect(x4, 175, 50, 10);
-  ctx.fillRect(x5, 175, 50, 10);
-  ctx.fillRect(x6, 175, 50, 10);
-  ctx.fillRect(x7, 175, 50, 10);
-  ctx.fillRect(x8, 175, 50, 10);
-  ctx.fillRect(x9, 175, 50, 10);
-  ctx.fillRect(x10, 175, 50, 10);
-  ctx.fillRect(x11, 175, 50, 10);
-  ctx.fillRect(x12, 175, 50, 10);
-  ctx.fillRect(x13, 175, 50, 10);
+  ctx.fillRect(x1, y0, 50, 10);
+  ctx.fillRect(x2, y0, 50, 10);
+  ctx.fillRect(x3, y0, 50, 10);
+  ctx.fillRect(x4, y0, 50, 10);
+  ctx.fillRect(x5, y0, 50, 10);
+  ctx.fillRect(x6, y0, 50, 10);
+  ctx.fillRect(x7, y0, 50, 10);
+  ctx.fillRect(x8, y0, 50, 10);
+  ctx.fillRect(x9, y0, 50, 10);
+  ctx.fillRect(x10, y0, 50, 10);
+  ctx.fillRect(x11, y0, 50, 10);
+  ctx.fillRect(x12, y0, 50, 10);
+  ctx.fillRect(x13, y0, 50, 10);
 
   x1 -= gameScore /100;
   x2 -= gameScore /100;
@@ -103,7 +110,23 @@ function drawLines() {
     x13 = 1280;
   }
 
+  //line 2
+  ctx.fillRect(x1, y1, 50, 10);
+  ctx.fillRect(x2, y1, 50, 10);
+  ctx.fillRect(x3, y1, 50, 10);
+  ctx.fillRect(x4, y1, 50, 10);
+  ctx.fillRect(x5, y1, 50, 10);
+  ctx.fillRect(x6, y1, 50, 10);
+  ctx.fillRect(x7, y1, 50, 10);
+  ctx.fillRect(x8, y1, 50, 10);
+  ctx.fillRect(x9, y1, 50, 10);
+  ctx.fillRect(x10, y1, 50, 10);
+  ctx.fillRect(x11, y1, 50, 10);
+  ctx.fillRect(x12, y1, 50, 10);
+  ctx.fillRect(x13, y1, 50, 10);
+
 }
+  
 
 function drawBackground() {
   ctx.fillStyle = '#3c4245'
