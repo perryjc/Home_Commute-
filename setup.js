@@ -18,11 +18,20 @@ function gameOver() {
 //if (!gameRunning && gameScore <= 5)
 
 // "p" to pause
+// "r" to reset (only if game is paused)
 function handleKeyDown(e){
     if(e.key === 'p' || e.key === 'P') {
         gameRunning = !gameRunning;
         drawPauseBackground(); // Pause_menu.js
     }
+    if(e.key === 'r' || e.key === 'R') {
+        if(!gameRunning) {
+            location.reload();
+        } else {
+            console.log("Pause game first");
+        }
+    }
+
 }
 
 document.addEventListener('keydown', handleKeyDown);
