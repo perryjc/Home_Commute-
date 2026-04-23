@@ -36,5 +36,5 @@ function drawPauseBackground() {
   ctx.fillText("1000", 580, 300);
     //Lives Numbers
   ctx.fillStyle = "#000000";
-  ctx.fillText("4/4", 490, 350);  
+  ctx.fillText(lives, 490, 350);  
 }
