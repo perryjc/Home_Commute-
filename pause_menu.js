@@ -18,7 +18,7 @@ function drawPauseBackground() {
     //High Score text
   ctx.fillStyle = "#000000";
   ctx.fillText("High Score", 400, 300);
-    //Lives
+    //Lives text
   ctx.fillStyle = "#000000";
   ctx.fillText("Lives", 400, 350);  
     //Resume text
@@ -27,4 +27,14 @@ function drawPauseBackground() {
     //Start Over text
   ctx.fillStyle = "#000000";
   ctx.fillText("Press R to Start Over", 400, 530);
+
+    //Score numbers
+  ctx.fillStyle = "#000000";
+  ctx.fillText(gameScore, 550, 250);
+    //High Score numbers
+  ctx.fillStyle = "#000000";
+  ctx.fillText("1000", 580, 300);
+    //Lives Numbers
+  ctx.fillStyle = "#000000";
+  ctx.fillText("4/4", 490, 350);  
 }
