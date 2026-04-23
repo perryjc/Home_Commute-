@@ -3,7 +3,7 @@ function animate() {
     gameScore += 1;
     carTimer += 1;
     // make cars faster over time:
-    // gameSpeed += 0.1;
+    gameSpeed += 0.01;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
