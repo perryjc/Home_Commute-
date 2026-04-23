@@ -9,11 +9,11 @@ let gameSpeed = 3;
 let gameScore = 0;
 let lives = 4;
 
-function gameOver() {
-    gameRunning = false;
-    alert("GAME OVER. SCORE:" + gameScore);
-    location.reload(); // Restarts the game
-}
+//function gameOver() {
+//    gameRunning = false;
+//    alert("GAME OVER. SCORE:" + gameScore);
+//    location.reload(); // Restarts the game
+//}
 
 //if (!gameRunning && gameScore <= 5)
 
