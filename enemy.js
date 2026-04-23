@@ -1,6 +1,10 @@
 const enemies = [];
 let carTimer = 0;
 
+// faster over time
+let SpeedTimer = 0
+
+
 class Enemy {
     constructor(lane, speed, direction) {
         this.width = 60;
@@ -21,6 +25,17 @@ class Enemy {
     draw(ctx) {
         ctx.fillStyle = "orange";
         ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+}
+
+//faster over time (If Statements)
+while (true){ //make this stop and reset when die
+    if (SpeedTimer => 60){
+        Enemy.speed = Enemy.speed + 3;
+        SpeedTimer = 0;
+    }
+    else if (SpeedTimer <= 60){
+        SpeedTimer = SpeedTimer + 3;
     }
 }
 
