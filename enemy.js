@@ -1,10 +1,6 @@
 const enemies = [];
 let carTimer = 0;
 
-// faster over time
-let SpeedTimer = 0
-
-
 class Enemy {
     constructor(lane, speed, direction) {
         this.width = 60;
