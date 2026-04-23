@@ -5,7 +5,6 @@
 - [ ] Add start menu
 - [x] Add pause menu
 - [x] At speed up feture
-- [ ] Add side to side movement
 - [ ] Add difficulty selector (game speed faster)
 - [ ] Add high score system
 > gemini example:
@@ -27,3 +26,5 @@ let scoreAsNumber = parseInt(savedHighScore);
 - [x] make lane lines better
 - [x] Add game over screen
 - [x] add score/lives to pause menu
+- [ ] Create crash indicator (explosion or something)
+- [ ] Make road lines slow down on crash (right now speed is attached to gameScore needs to be a new variable)
