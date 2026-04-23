@@ -21,6 +21,9 @@ let x13 = 1200;
 let y1 = 550;
 let y0 = 200;
 
+// z
+let z = '#ff0000';
+
 
 function drawLines() {
   ctx.strokeStyle = '#ffea00';
@@ -142,9 +145,127 @@ function drawLines() {
   ctx.fillRect(x12, y1, 50, 10);
   ctx.fillRect(x13, y1, 50, 10);
 
-}
 
 // Draw hearts
+
+//Lives
+
+// L
+ctx.strokeStyle = '#ff0000';
+ctx.lineWidth = 2;
+ctx.beginPath();
+ctx.moveTo(100, 5);
+ctx.lineTo(100, 45);
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(100, 45);
+ctx.lineTo(140, 45);
+ctx.stroke();
+
+// I
+ctx.beginPath();
+ctx.moveTo(150, 5);
+ctx.lineTo(150, 45);
+ctx.stroke();
+
+// V
+ctx.beginPath();
+ctx.moveTo(160, 5);
+ctx.lineTo(170, 45);
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(170, 45);
+ctx.lineTo(180, 5);
+ctx.stroke();
+
+// E
+ctx.beginPath();
+ctx.moveTo(190, 5);
+ctx.lineTo(190, 45);
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(190, 5);
+ctx.lineTo(230, 5);
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(190, 25);
+ctx.lineTo(220, 25);
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(190, 45);
+ctx.lineTo(230, 45);
+ctx.stroke();
+
+// S
+ctx.beginPath();
+ctx.moveTo(240, 5);
+ctx.lineTo(280, 5);
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(240, 5);
+ctx.lineTo(240, 25);
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(240, 25);
+ctx.lineTo(280, 25);
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(280, 25);
+ctx.lineTo(280, 45);
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(240, 45);
+ctx.lineTo(280, 45);
+ctx.stroke();
+
+// Hearts
+ctx.fillStyle = z;
+ctx.lineWidth = 2;
+
+ctx.beginPath();
+ctx.moveTo(330, 5);
+ctx.lineTo(350, 15);
+ctx.lineTo(370, 5);
+ctx.lineTo(380, 20);
+ctx.lineTo(350, 45);
+ctx.lineTo(320, 20);
+ctx.lineTo(330, 5);
+ctx.fill();
+
+ctx.beginPath();
+ctx.moveTo(400, 5);
+ctx.lineTo(420, 15);
+ctx.lineTo(440, 5);
+ctx.lineTo(450, 20);
+ctx.lineTo(420, 45);
+ctx.lineTo(390, 20);
+ctx.lineTo(400, 5);
+ctx.fill();
+
+ctx.beginPath();
+ctx.moveTo(470, 5);
+ctx.lineTo(490, 15);
+ctx.lineTo(510, 5);
+ctx.lineTo(520, 20);
+ctx.lineTo(490, 45);
+ctx.lineTo(460, 20);
+ctx.lineTo(470, 5);
+ctx.fill();
+
+ctx.beginPath();
+ctx.moveTo(540, 5);
+ctx.lineTo(560, 15);
+ctx.lineTo(580, 5);
+ctx.lineTo(590, 20);
+ctx.lineTo(560, 45);
+ctx.lineTo(530, 20);
+ctx.lineTo(540, 5);
+ctx.fill();
+
+if (lives == 3) {
+  z = '#000000';
+}
+}
 
   
 
