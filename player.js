@@ -30,6 +30,8 @@ class Player {
 
 const player = new Player();
 
+
+
 // Input handling
 window.addEventListener('keydown', (e) => {
     if (e.key === "ArrowUp") player.moveUp();

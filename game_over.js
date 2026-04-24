@@ -1,5 +1,10 @@
 function gameOver(){
     gameRunning = !gameRunning;
+    if (gameScore >= gameHighScore) {
+        localStorage.setItem('newHighScore', gameScore);
+    } else {
+        console.log("did not score higher")
+    }
     ctx.fillStyle = '#000000';
     ctx.fillRect(320, 150, 640, 400);
     // Game Over text

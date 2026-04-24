@@ -7,7 +7,8 @@ const LANES = [100, 250, 450, 650]; // Y-coordinates for the Lanes
 let gameRunning = true;
 let gameSpeed = 3;
 let gameScore = 0;
-let gameHighScore = 1000; // placeholder
+let savedHighScore = localStorage.getItem('newHighScore') || '0';
+let gameHighScore = parseInt(savedHighScore); // High score As iniger
 let lives = 4;
 
 //function gameOver() {
