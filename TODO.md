@@ -22,10 +22,9 @@ let scoreAsNumber = parseInt(savedHighScore);
 - [ ] Add menu and instructions
 - [x] MAKE IT NOT LOOK LIKE SOMEONE GAVE A 5 YEAR-OLD ACCESS TO MICROSOFT PAINT
 - [x] add more lines to the road so that is is acually a road and not a gray plane with colored rectangles
-- [ ] "make road more realistic (make your car only be on the bottom 2 lanes)" ?????
 - [x] make lane lines better
 - [x] Add game over screen
 - [x] add score/lives to pause menu
 - [ ] Create crash indicator (explosion or something)
 - [ ] Make road lines slow down on crash (right now speed is attached to gameScore needs to be a new variable)
-- [ ] Lives Looks so bad
+- [x] Lives Looks so bad
