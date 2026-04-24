@@ -4,8 +4,11 @@ function gameOver(){
     ctx.fillRect(320, 150, 640, 400);
     if (gameScore >= gameHighScore) {
         localStorage.setItem('newHighScore', gameScore);
+        savedHighScore = localStorage.getItem('newHighScore')
+        gameHighScore = parseInt(savedHighScore);
         // Draw New High score:
         ctx.font = "bold 30px Arial";
+        ctx.textAlign = 'center';
         ctx.fillStyle = "#f31212";
         ctx.fillText("New High Score!", canvas.width / 2, 300);
     } else {

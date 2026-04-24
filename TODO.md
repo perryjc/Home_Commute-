@@ -6,7 +6,7 @@
 - [x] Add pause menu
 - [x] At speed up feture
 - [ ] Add difficulty selector (game speed faster)
-- [ ] Add high score system
+- [x] Add high score system
 > gemini example:
 ```
 // 1. Save a new high score
