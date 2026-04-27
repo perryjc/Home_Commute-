@@ -32,4 +32,5 @@ function handleHit(index) {
     if (lives <= 0) {
         gameOver();
     }
+
 }

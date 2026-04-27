@@ -81,19 +81,19 @@ function drawLines() {
   ctx.fillStyle = '#ffffff';
 
   //line 1
-  ctx.fillRect(x1, y0, 50, 10);
-  ctx.fillRect(x2, y0, 50, 10);
-  ctx.fillRect(x3, y0, 50, 10);
-  ctx.fillRect(x4, y0, 50, 10);
-  ctx.fillRect(x5, y0, 50, 10);
-  ctx.fillRect(x6, y0, 50, 10);
-  ctx.fillRect(x7, y0, 50, 10);
-  ctx.fillRect(x8, y0, 50, 10);
-  ctx.fillRect(x9, y0, 50, 10);
-  ctx.fillRect(x10, y0, 50, 10);
-  ctx.fillRect(x11, y0, 50, 10);
-  ctx.fillRect(x12, y0, 50, 10);
-  ctx.fillRect(x13, y0, 50, 10);
+  ctx.fillRect(x14, y0, 50, 10);
+  ctx.fillRect(x15, y0, 50, 10);
+  ctx.fillRect(x16, y0, 50, 10);
+  ctx.fillRect(x17, y0, 50, 10);
+  ctx.fillRect(x18, y0, 50, 10);
+  ctx.fillRect(x19, y0, 50, 10);
+  ctx.fillRect(x20, y0, 50, 10);
+  ctx.fillRect(x21, y0, 50, 10);
+  ctx.fillRect(x22, y0, 50, 10);
+  ctx.fillRect(x23, y0, 50, 10);
+  ctx.fillRect(x24, y0, 50, 10);
+  ctx.fillRect(x25, y0, 50, 10);
+  ctx.fillRect(x26, y0, 50, 10);
 
 // starting speed of the lines
 
@@ -211,19 +211,20 @@ function drawLines() {
   }
 
   //line 2
-  ctx.fillRect(x14, y1, 50, 10);
-  ctx.fillRect(x15, y1, 50, 10);
-  ctx.fillRect(x16, y1, 50, 10);
-  ctx.fillRect(x17, y1, 50, 10);
-  ctx.fillRect(x18, y1, 50, 10);
-  ctx.fillRect(x19, y1, 50, 10);
-  ctx.fillRect(x20, y1, 50, 10);
-  ctx.fillRect(x21, y1, 50, 10);
-  ctx.fillRect(x22, y1, 50, 10);
-  ctx.fillRect(x23, y1, 50, 10);
-  ctx.fillRect(x24, y1, 50, 10);
-  ctx.fillRect(x25, y1, 50, 10);
-  ctx.fillRect(x26, y1, 50, 10);
+  ctx.fillRect(x1, y1, 50, 10);
+  ctx.fillRect(x2, y1, 50, 10);
+  ctx.fillRect(x3, y1, 50, 10);
+  ctx.fillRect(x4, y1, 50, 10);
+  ctx.fillRect(x5, y1, 50, 10);
+  ctx.fillRect(x6, y1, 50, 10);
+  ctx.fillRect(x7, y1, 50, 10);
+  ctx.fillRect(x8, y1, 50, 10);
+  ctx.fillRect(x9, y1, 50, 10);
+  ctx.fillRect(x10, y1, 50, 10);
+  ctx.fillRect(x11, y1, 50, 10);
+  ctx.fillRect(x12, y1, 50, 10);
+  ctx.fillRect(x13, y1, 50, 10);
+  
 
 
 // Draw hearts, "score" and "lives"
@@ -460,6 +461,10 @@ ctx.stroke();
 ctx.font = '40px Arial';
 ctx.fillStyle = '#ffffff';
 ctx.fillText(gameScore, 1150, 40);
+
+
+
+
 }
 
 
@@ -469,3 +474,4 @@ function drawBackground() {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = '#4a90e2';
 }
+

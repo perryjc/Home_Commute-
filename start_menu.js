@@ -1,4 +1,4 @@
-function drawStartBackground() {
+function drawStartMenu() {
   ctx.fillStyle = '#FFF8DC';
   ctx.fillRect(320, 150, 640, 400);
   ctx.font = "30px Arial";
@@ -25,4 +25,10 @@ function drawStartBackground() {
   ctx.fillText("Your goal is to dodge the orange cars. The speed of the cars also goes up the longer you survive.", 100, 250);  
   ctx.fillText("You have 4 lives, and your score goes up the longer you survive.", 100, 250);  
   ctx.fillText("The speed of the cars also goes up the longer you survive.", 100, 250)
+      //Start Button
+  ctx.fillStyle = "#000000";
+  ctx.fillRect(500, 400, 200, 50);
+  ctx.fillStyle = "#FFFFFF";
+  ctx.font = "20px Arial";
+  ctx.fillText("Press Enter to Start", 540, 435);
 }
