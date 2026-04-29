@@ -98,116 +98,116 @@ function drawLines() {
 // starting speed of the lines
 
 // top lines
-  x1 -= gameSpeed /100;
-  x2 -= gameSpeed /100;
-  x3 -= gameSpeed /100;
-  x4 -= gameSpeed /100;
-  x5 -= gameSpeed /100;
-  x6 -= gameSpeed /100;
-  x7 -= gameSpeed /100;
-  x8 -= gameSpeed /100;
-  x9 -= gameSpeed /100;
-  x10 -= gameSpeed /100;
-  x11 -= gameSpeed /100;
-  x12 -= gameSpeed /100;
-  x13 -= gameSpeed /100;
+  x1 -= gameSpeed;
+  x2 -= gameSpeed;
+  x3 -= gameSpeed;
+  x4 -= gameSpeed;
+  x5 -= gameSpeed;
+  x6 -= gameSpeed ;
+  x7 -= gameSpeed ;
+  x8 -= gameSpeed ;
+  x9 -= gameSpeed ;
+  x10 -= gameSpeed ;
+  x11 -= gameSpeed ;
+  x12 -= gameSpeed ;
+  x13 -= gameSpeed ;
 
 // bottom lines
-  x14 += gameSpeed /100;
-  x15 += gameSpeed /100;
-  x16 += gameSpeed /100;
-  x17 += gameSpeed /100;
-  x18 += gameSpeed /100;
-  x19 += gameSpeed /100;
-  x20 += gameSpeed /100;
-  x21 += gameSpeed /100;
-  x22 += gameSpeed /100;
-  x23 += gameSpeed /100;
-  x24 += gameSpeed /100;
-  x25 += gameSpeed /100;
-  x26 += gameSpeed /100;
+  x14 += gameSpeed ;
+  x15 += gameSpeed ;
+  x16 += gameSpeed ;
+  x17 += gameSpeed ;
+  x18 += gameSpeed ;
+  x19 += gameSpeed ;
+  x20 += gameSpeed ;
+  x21 += gameSpeed ;
+  x22 += gameSpeed ;
+  x23 += gameSpeed ;
+  x24 += gameSpeed ;
+  x25 += gameSpeed;
+  x26 += gameSpeed;
 
 // code for when lines goes off the screen, top line
-  if (x1 < 0) {
-    x1 = 1280;
+  if (x1 < -50) {
+    x1 = 1250;
   }
-  if (x2 < 0) {
-    x2 = 1280;
+  if (x2 < -50) {
+    x2 = 1250;
   }
-  if (x3 < 0) {
-    x3 = 1280;
+  if (x3 < -50) {
+    x3 = 1250;
   }
-  if (x4 < 0) {
-    x4 = 1280;
+  if (x4 < -50) {
+    x4 = 1250;
   }
-  if (x5 < 0) {
-    x5 = 1280;
+  if (x5 < -50) {
+    x5 = 1250;
   }
-  if (x6 < 0) {
-    x6 = 1280;
+  if (x6 < -50) {
+    x6 = 1250;
   }
-  if (x7 < 0) {
-    x7 = 1280;
+  if (x7 < -50) {
+    x7 = 1250;
   }
-  if (x8 < 0) {
-    x8 = 1280;
+  if (x8 < -50) {
+    x8 = 1250;
   }
-  if (x9 < 0) {
-    x9 = 1280;
+  if (x9 < -50) {
+    x9 = 1250;
   }
-  if (x10 < 0) {
-    x10 = 1280;
+  if (x10 < -50) {
+    x10 = 1250;
   }
-  if (x11 < 0) {
-    x11 = 1280;
+  if (x11 < -50) {
+    x11 = 1250;
   }
-  if (x12 < 0) {
-    x12 = 1280;
+  if (x12 < -50) {
+    x12 = 1250;
   }
-  if (x13 < 0) {
-    x13 = 1280;
+  if (x13 < -50) {
+    x13 = 1250;
   }
 
   //code when the lines goes off the screen, bottom line
 
   if (x14 > 1280) {
-    x14 = 0;
+    x14 = -50;
   }
   if (x15 > 1280) {
-    x15 = 0;
+    x15 = -50;
   }
   if (x16 > 1280) {
-    x16 = 0;
+    x16 = -50;
   }
   if (x17 > 1280) {
-    x17 = 0;
+    x17 = -50;
   }
   if (x18 > 1280) {
-    x18 = 0;
+    x18 = -50;
   }
   if (x19 > 1280) {
-    x19 = 0;
+    x19 = -50;
   }
   if (x20 > 1280) {
-    x20 = 0;
+    x20 = -50;
   }
   if (x21 > 1280) {
-    x21 = 0;
+    x21 = -50;
   }
   if (x22 > 1280) {
-    x22 = 0;
+    x22 = -50;
   }
   if (x23 > 1280) {
-    x23 = 0;
+    x23 = -50;
   }
   if (x24 > 1280) {
-    x24 = 0;
+    x24 = -50;
   }
   if (x25 > 1280) {
-    x25 = 0;
+    x25 = -50;
   }
   if (x26 > 1280) {
-    x26 = 0;
+    x26 = -50;
   }
 
   //line 2
