@@ -23,7 +23,7 @@ function drawStartMenu() {
   ctx.font = "24px Arial";
   ctx.fillText("Object of the Game", 360, 365);
   ctx.font = "20px Arial";
-  ctx.fillText("• Your goal is to dodge the orange cars.", 360, 395);
+  ctx.fillText("• Your goal is to dodge the orange cars and blue pedestrians.", 360, 395);
   ctx.fillText("• The cars speed up the longer you survive.", 360, 425);
   ctx.fillText("• You have 4 lives and your score increases over time.", 360, 455);
 
