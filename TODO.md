@@ -2,7 +2,7 @@
 
 - [x] Genueinly create a working prototype
 - [x] Add a screen lock feture (prevent arrow keys from scrolling)
-- [ ] Add start menu
+- [x] Add start menu
 - [x] Add pause menu
 - [x] At speed up feture
 - [ ] Add difficulty selector (game speed faster)

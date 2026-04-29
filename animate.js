@@ -9,6 +9,9 @@ function animate() {
 
     // Draw the Background (art.js)
     drawBackground(ctx); 
+    // smooth side to side
+    if (leftPressed)  player.x -= 7;
+    if (rightPressed) player.x += 7;
 
     // Draw Player
     player.draw(ctx);
