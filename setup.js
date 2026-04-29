@@ -38,7 +38,6 @@ function handleKeyDown(e){
             console.log("Pause game first");
         }
     }
-
 }
 
 document.addEventListener('keydown', handleKeyDown);
