@@ -11,6 +11,9 @@ let gameScore = 0;
 let savedHighScore = localStorage.getItem('newHighScore') || '0';
 let gameHighScore = parseInt(savedHighScore); // High score As iniger
 let lives = 4;
+// let playerX = (canvas.width - player.width) / 2 || 600;
+let rightPressed = false; // smooth movement
+let leftPressed = false;
 
 //function gameOver() {
 //    gameRunning = false;

@@ -7,18 +7,6 @@
 - [x] At speed up feture
 - [ ] Add difficulty selector (game speed faster)
 - [x] Add high score system
-> gemini example:
-```
-// 1. Save a new high score
-let currentScore = 5000;
-localStorage.setItem('racingHighScore', currentScore);
-
-// 2. Retrieve it later (even after a reload)
-let savedHighScore = localStorage.getItem('racingHighScore');
-
-// Since localStorage only stores text, convert it back to a number
-let scoreAsNumber = parseInt(savedHighScore); 
-```
 - [x] Add menu and instructions
 - [x] MAKE IT NOT LOOK LIKE SOMEONE GAVE A 5 YEAR-OLD ACCESS TO MICROSOFT PAINT
 - [x] add more lines to the road so that is is acually a road and not a gray plane with colored rectangles
@@ -26,6 +14,13 @@ let scoreAsNumber = parseInt(savedHighScore);
 - [x] Add game over screen
 - [x] add score/lives to pause menu
 - [ ] Create crash indicator (explosion or something)
+- [ ] Maybe make car spin out
 - [ ] Make road lines slow down on crash (right now speed is attached to gameScore needs to be a new variable)
 - [x] Lives Looks so bad
-- [ ] Add side blocks
+- [ ] Add side walk
+- [ ] Make something happen when score > 4000 (difficult but not inpossible)
+- [ ] Make both road lines move the same way
+- [ ] Make pedestrians function
+- [ ] Pedistrain and car collision (blood pool?) 
+
+
