@@ -22,5 +22,3 @@
 - [ ] Make both road lines move the same way
 - [ ] Make pedestrians function
 - [ ] Pedistrain and car collision (blood pool?) 
-
-
