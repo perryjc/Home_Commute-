@@ -24,7 +24,7 @@ function handleHit(index) {
 
     // Take away a life
     lives -= 1;
-
+    
     // explosion animation    
     explosion();
 
