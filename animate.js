@@ -41,4 +41,4 @@ function animate() {
 }
 
 // Start the game
-drawStartMenu();
+animate();
