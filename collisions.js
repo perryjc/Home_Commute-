@@ -25,6 +25,9 @@ function handleHit(index) {
     // Take away a life
     lives -= 1;
 
+    // explosion animation    
+    explosion();
+
     // slowdown the game after crash
     gameSpeed = gameSpeed / 3;
 

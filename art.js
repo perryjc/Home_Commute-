@@ -475,3 +475,32 @@ function drawBackground() {
   ctx.fillStyle = '#4a90e2';
 }
 
+function explosion() {
+  if (lives == 3) {
+    ctx.fillStyle = '#ff0000';
+    ctx.beginPath();
+    ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 50, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  if (lives == 2) {
+    ctx.fillStyle = '#ff0000';
+    ctx.beginPath();
+    ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 70, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  if (lives == 1) {
+    ctx.fillStyle = '#ff0000';
+    ctx.beginPath();
+    ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 90, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  if (lives == 0) {
+    ctx.fillStyle = '#ff0000';
+    ctx.beginPath();
+    ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 110, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
