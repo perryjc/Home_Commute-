@@ -98,34 +98,34 @@ function drawLines() {
 // starting speed of the lines
 
 // top lines
-  x1 -= gameScore /100;
-  x2 -= gameScore /100;
-  x3 -= gameScore /100;
-  x4 -= gameScore /100;
-  x5 -= gameScore /100;
-  x6 -= gameScore /100;
-  x7 -= gameScore /100;
-  x8 -= gameScore /100;
-  x9 -= gameScore /100;
-  x10 -= gameScore /100;
-  x11 -= gameScore /100;
-  x12 -= gameScore /100;
-  x13 -= gameScore /100;
+  x1 -= gameSpeed /100;
+  x2 -= gameSpeed /100;
+  x3 -= gameSpeed /100;
+  x4 -= gameSpeed /100;
+  x5 -= gameSpeed /100;
+  x6 -= gameSpeed /100;
+  x7 -= gameSpeed /100;
+  x8 -= gameSpeed /100;
+  x9 -= gameSpeed /100;
+  x10 -= gameSpeed /100;
+  x11 -= gameSpeed /100;
+  x12 -= gameSpeed /100;
+  x13 -= gameSpeed /100;
 
 // bottom lines
-  x14 += gameScore /100;
-  x15 += gameScore /100;
-  x16 += gameScore /100;
-  x17 += gameScore /100;
-  x18 += gameScore /100;
-  x19 += gameScore /100;
-  x20 += gameScore /100;
-  x21 += gameScore /100;
-  x22 += gameScore /100;
-  x23 += gameScore /100;
-  x24 += gameScore /100;
-  x25 += gameScore /100;
-  x26 += gameScore /100;
+  x14 += gameSpeed /100;
+  x15 += gameSpeed /100;
+  x16 += gameSpeed /100;
+  x17 += gameSpeed /100;
+  x18 += gameSpeed /100;
+  x19 += gameSpeed /100;
+  x20 += gameSpeed /100;
+  x21 += gameSpeed /100;
+  x22 += gameSpeed /100;
+  x23 += gameSpeed /100;
+  x24 += gameSpeed /100;
+  x25 += gameSpeed /100;
+  x26 += gameSpeed /100;
 
 // code for when lines goes off the screen, top line
   if (x1 < 0) {
@@ -295,6 +295,13 @@ if (lives == 1) {
 }
 if (lives == 0) {
   z1 = '#000000';
+}
+
+if (lives == 4) {
+  z1 = '#ff0000';
+  z2 = '#ff0000';
+  z3 = '#ff0000';
+  z4 = '#ff0000';
 }
 
 // Score
