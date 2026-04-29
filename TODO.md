@@ -28,3 +28,4 @@ let scoreAsNumber = parseInt(savedHighScore);
 - [ ] Create crash indicator (explosion or something)
 - [ ] Make road lines slow down on crash (right now speed is attached to gameScore needs to be a new variable)
 - [x] Lives Looks so bad
+- [ ] Add side blocks
