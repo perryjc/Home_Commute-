@@ -19,25 +19,3 @@ let lives = 4;
 //}
 
 //if (!gameRunning && gameScore <= 5)
-
-// "p" to pause
-// "r" to reset (only if game is paused)
-function handleKeyDown(e){
-    if(e.key === 'p' || e.key === 'P') {
-        if (lives <= 0) {
-            console.log("you dead twin");
-        } else {
-            gameRunning = !gameRunning;
-            drawPauseBackground(); // Pause_menu.js
-        }
-    }
-    if(e.key === 'r' || e.key === 'R') {
-        if(!gameRunning) {
-            location.reload();
-        } else {
-            console.log("Pause game first");
-        }
-    }
-}
-
-document.addEventListener('keydown', handleKeyDown);
