@@ -19,7 +19,7 @@ let savedHighScore = localStorage.getItem('racingHighScore');
 // Since localStorage only stores text, convert it back to a number
 let scoreAsNumber = parseInt(savedHighScore); 
 ```
-- [ ] Add menu and instructions
+- [x] Add menu and instructions
 - [x] MAKE IT NOT LOOK LIKE SOMEONE GAVE A 5 YEAR-OLD ACCESS TO MICROSOFT PAINT
 - [x] add more lines to the road so that is is acually a road and not a gray plane with colored rectangles
 - [x] make lane lines better
