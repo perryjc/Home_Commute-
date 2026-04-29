@@ -36,4 +36,7 @@ const player = new Player();
 window.addEventListener('keydown', (e) => {
     if (e.key === "ArrowUp") player.moveUp();
     if (e.key === "ArrowDown") player.moveDown();
+    if (["ArrowUp", "ArrowDown", "Space"].includes(e.key)) {
+        e.preventDefault();
+    }
 });
