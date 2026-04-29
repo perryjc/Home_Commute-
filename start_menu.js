@@ -33,4 +33,9 @@ function drawStartMenu() {
   ctx.fillStyle = "#FFFFFF";
   ctx.font = "20px Arial";
   ctx.fillText("Press Enter to Start", 553, 523);
+
+  window.addEventListener('keydown', (enter) => {
+    if (enter.key === "Enter") animate();
+    
+});
        }
