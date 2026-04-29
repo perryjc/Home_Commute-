@@ -4,6 +4,7 @@ const ctx = canvas.getContext("2d");
 //Defineing Objects
 //car is the enemy
 const LANES = [100, 250, 450, 650]; // Y-coordinates for the Lanes
+const PEDESTRIANLANES = [640] // x coords for lanes
 let gameRunning = true;
 let gameSpeed = 3;
 let gameScore = 0;
