@@ -481,6 +481,7 @@ function explosion() {
     ctx.beginPath();
     ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 50, 0, Math.PI * 2);
     ctx.fill();
+    
   }
 
   if (lives == 2) {
