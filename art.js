@@ -232,118 +232,56 @@ function drawLines() {
 //Lives
 
 // L
-ctx.strokeStyle = '#ff0000';
-ctx.lineWidth = 2;
-ctx.beginPath();
-ctx.moveTo(100, 5);
-ctx.lineTo(100, 45);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(100, 45);
-ctx.lineTo(140, 45);
-ctx.stroke();
+ctx.font = '50px Nunito Sans';
+ctx.fillStyle = '#ff0000';
+ctx.fillText("Lives:", 25, 40);
 
-// I
-ctx.beginPath();
-ctx.moveTo(150, 5);
-ctx.lineTo(150, 45);
-ctx.stroke();
-
-// V
-ctx.beginPath();
-ctx.moveTo(160, 5);
-ctx.lineTo(170, 45);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(170, 45);
-ctx.lineTo(180, 5);
-ctx.stroke();
-
-// E
-ctx.beginPath();
-ctx.moveTo(190, 5);
-ctx.lineTo(190, 45);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(190, 5);
-ctx.lineTo(230, 5);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(190, 25);
-ctx.lineTo(220, 25);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(190, 45);
-ctx.lineTo(230, 45);
-ctx.stroke();
-
-// S
-ctx.beginPath();
-ctx.moveTo(240, 5);
-ctx.lineTo(280, 5);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(240, 5);
-ctx.lineTo(240, 25);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(240, 25);
-ctx.lineTo(280, 25);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(280, 25);
-ctx.lineTo(280, 45);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(240, 45);
-ctx.lineTo(280, 45);
-ctx.stroke();
 
 // Hearts
 ctx.lineWidth = 2;
 
 ctx.beginPath();
 ctx.fillStyle = z1;
-ctx.moveTo(330, 5);
-ctx.lineTo(350, 15);
-ctx.lineTo(370, 5);
-ctx.lineTo(380, 20);
-ctx.lineTo(350, 45);
-ctx.lineTo(320, 20);
-ctx.lineTo(330, 5);
+ctx.moveTo(170, 5);
+ctx.lineTo(190, 15);
+ctx.lineTo(210, 5);
+ctx.lineTo(220, 20);
+ctx.lineTo(190, 45);
+ctx.lineTo(160, 20);
+ctx.lineTo(170, 5);
 ctx.fill();
 
 ctx.beginPath();
 ctx.fillStyle = z2;
-ctx.moveTo(400, 5);
-ctx.lineTo(420, 15);
-ctx.lineTo(440, 5);
-ctx.lineTo(450, 20);
-ctx.lineTo(420, 45);
-ctx.lineTo(390, 20);
-ctx.lineTo(400, 5);
+ctx.moveTo(240, 5);
+ctx.lineTo(260, 15);
+ctx.lineTo(280, 5);
+ctx.lineTo(290, 20);
+ctx.lineTo(260, 45);
+ctx.lineTo(230, 20);
+ctx.lineTo(240, 5);
 ctx.fill();
 
 ctx.beginPath();
 ctx.fillStyle = z3;
-ctx.moveTo(470, 5);
-ctx.lineTo(490, 15);
-ctx.lineTo(510, 5);
-ctx.lineTo(520, 20);
-ctx.lineTo(490, 45);
-ctx.lineTo(460, 20);
-ctx.lineTo(470, 5);
+ctx.moveTo(310, 5);
+ctx.lineTo(330, 15);
+ctx.lineTo(350, 5);
+ctx.lineTo(360, 20);
+ctx.lineTo(330, 45);
+ctx.lineTo(300, 20);
+ctx.lineTo(310, 5);
 ctx.fill();
 
 ctx.beginPath();
 ctx.fillStyle = z4;
-ctx.moveTo(540, 5);
-ctx.lineTo(560, 15);
-ctx.lineTo(580, 5);
-ctx.lineTo(590, 20);
-ctx.lineTo(560, 45);
-ctx.lineTo(530, 20);
-ctx.lineTo(540, 5);
+ctx.moveTo(380, 5);
+ctx.lineTo(400, 15);
+ctx.lineTo(420, 5);
+ctx.lineTo(430, 20);
+ctx.lineTo(400, 45);
+ctx.lineTo(370, 20);
+ctx.lineTo(380, 5);
 ctx.fill();
 
 if (lives == 3) {
@@ -360,107 +298,14 @@ if (lives == 0) {
 }
 
 // Score
-ctx.strokeStyle = '#ff0000';
-ctx.lineWidth = 2;
-
-// S
-ctx.beginPath();
-ctx.moveTo(900, 5);
-ctx.lineTo(940, 5);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(900, 5);
-ctx.lineTo(900, 25);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(900, 25);
-ctx.lineTo(940, 25);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(940, 25);
-ctx.lineTo(940, 45);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(900, 45);
-ctx.lineTo(940, 45);
-ctx.stroke();
-
-// C
-ctx.beginPath();
-ctx.moveTo(950, 5);
-ctx.lineTo(990, 5);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(950, 5);
-ctx.lineTo(950, 45);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(950, 45);
-ctx.lineTo(990, 45);
-ctx.stroke();
-
-// O
-ctx.beginPath();
-ctx.moveTo(1000, 5);
-ctx.lineTo(1040, 5);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(1000, 5);
-ctx.lineTo(1000, 45);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(1000, 45);
-ctx.lineTo(1040, 45);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(1040, 5);
-ctx.lineTo(1040, 45);
-ctx.stroke();
-
-// R
-ctx.beginPath();
-ctx.moveTo(1050, 5);
-ctx.lineTo(1090, 5);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(1050, 5);
-ctx.lineTo(1050, 45);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(1050, 25);
-ctx.lineTo(1090, 25);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(1090, 5);
-ctx.lineTo(1090, 25);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(1050, 25);
-ctx.lineTo(1090, 45);
-ctx.stroke();
-
-// E
-ctx.beginPath();
-ctx.moveTo(1100, 5);
-ctx.lineTo(1100, 45);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(1100, 5);
-ctx.lineTo(1140, 5);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(1100, 25);
-ctx.lineTo(1130, 25);
-ctx.stroke();
-ctx.beginPath();
-ctx.moveTo(1100, 45);
-ctx.lineTo(1140, 45);
-ctx.stroke();
+ctx.font = '50px Nunito Sans';
+ctx.fillStyle = '#ff0000';
+ctx.fillText("Score:", 975, 40);
 
 // counter
-ctx.font = '40px Arial';
+ctx.font = '40px Nunito Sans';
 ctx.fillStyle = '#ffffff';
-ctx.fillText(gameScore, 1150, 40);
+ctx.fillText(gameScore, 1130, 40);
 
 
 
