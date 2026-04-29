@@ -24,8 +24,12 @@ let lives = 4;
 // "r" to reset (only if game is paused)
 function handleKeyDown(e){
     if(e.key === 'p' || e.key === 'P') {
-        gameRunning = !gameRunning;
-        drawPauseBackground(); // Pause_menu.js
+        if (lives <= 0) {
+            console.log("you dead twin");
+        } else {
+            gameRunning = !gameRunning;
+            drawPauseBackground(); // Pause_menu.js
+        }
     }
     if(e.key === 'r' || e.key === 'R') {
         if(!gameRunning) {
