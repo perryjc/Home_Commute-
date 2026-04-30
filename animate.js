@@ -52,5 +52,5 @@ function animate() {
 }
 
 // Start the game
-animate();
-//drawStartMenu();
+animate(); // don't call this here, it calls in start_menu.js when the user presses Enter to start the game.
+drawStartMenu();

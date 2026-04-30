@@ -1,41 +1,13 @@
 
-//variables
-
-//xs
-
-// top line
-let x1 = 0;
-let x2 = 100;
-let x3 = 200;
-let x4 = 300;
-let x5 = 400;
-let x6 = 500;
-let x7 = 600;
-let x8 = 700;
-let x9 = 800;
-let x10 = 900;
-let x11 = 1000;
-let x12 = 1100;
-let x13 = 1200;
-
-// bottom line
-let x14 = 0;
-let x15 = 100;
-let x16 = 200;
-let x17 = 300;
-let x18 = 400;
-let x19 = 500;
-let x20 = 600;
-let x21 = 700;
-let x22 = 800;
-let x23 = 900;
-let x24 = 1000;
-let x25 = 1100;
-let x26 = 1200;
-
-//ys
-let y1 = 550; // bottom line
-let y0 = 200; // top line
+// variables
+const dashWidth = 50;
+const dashHeight = 10;
+const dashSpacing = 100;
+const roadEdgeRight = 1280;
+const y1 = 550; // bottom line
+const y0 = 200; // top line
+let topLineOffset = 0;
+let bottomLineOffset = 0;
 
 // z hearts
 let z1 = '#ff0000';
@@ -80,150 +52,18 @@ function drawLines() {
   // white lines on the road
   ctx.fillStyle = '#ffffff';
 
-  //line 1
-  ctx.fillRect(x14, y0, 50, 10);
-  ctx.fillRect(x15, y0, 50, 10);
-  ctx.fillRect(x16, y0, 50, 10);
-  ctx.fillRect(x17, y0, 50, 10);
-  ctx.fillRect(x18, y0, 50, 10);
-  ctx.fillRect(x19, y0, 50, 10);
-  ctx.fillRect(x20, y0, 50, 10);
-  ctx.fillRect(x21, y0, 50, 10);
-  ctx.fillRect(x22, y0, 50, 10);
-  ctx.fillRect(x23, y0, 50, 10);
-  ctx.fillRect(x24, y0, 50, 10);
-  ctx.fillRect(x25, y0, 50, 10);
-  ctx.fillRect(x26, y0, 50, 10);
+  topLineOffset = (topLineOffset - gameSpeed) % dashSpacing;
+  if (topLineOffset < 0) topLineOffset += dashSpacing;
 
-// starting speed of the lines
+  bottomLineOffset = (bottomLineOffset + gameSpeed) % dashSpacing;
+  if (bottomLineOffset < 0) bottomLineOffset += dashSpacing;
 
-// top lines
-  x1 -= gameSpeed;
-  x2 -= gameSpeed;
-  x3 -= gameSpeed;
-  x4 -= gameSpeed;
-  x5 -= gameSpeed;
-  x6 -= gameSpeed ;
-  x7 -= gameSpeed ;
-  x8 -= gameSpeed ;
-  x9 -= gameSpeed ;
-  x10 -= gameSpeed ;
-  x11 -= gameSpeed ;
-  x12 -= gameSpeed ;
-  x13 -= gameSpeed ;
-
-// bottom lines
-  x14 += gameSpeed ;
-  x15 += gameSpeed ;
-  x16 += gameSpeed ;
-  x17 += gameSpeed ;
-  x18 += gameSpeed ;
-  x19 += gameSpeed ;
-  x20 += gameSpeed ;
-  x21 += gameSpeed ;
-  x22 += gameSpeed ;
-  x23 += gameSpeed ;
-  x24 += gameSpeed ;
-  x25 += gameSpeed;
-  x26 += gameSpeed;
-
-// code for when lines goes off the screen, top line
-  if (x1 < -50) {
-    x1 = 1250;
+  for (let x = topLineOffset - dashSpacing; x < roadEdgeRight; x += dashSpacing) {
+    ctx.fillRect(x, y0, dashWidth, dashHeight);
   }
-  if (x2 < -50) {
-    x2 = 1250;
+  for (let x = bottomLineOffset - dashSpacing; x < roadEdgeRight; x += dashSpacing) {
+    ctx.fillRect(x, y1, dashWidth, dashHeight);
   }
-  if (x3 < -50) {
-    x3 = 1250;
-  }
-  if (x4 < -50) {
-    x4 = 1250;
-  }
-  if (x5 < -50) {
-    x5 = 1250;
-  }
-  if (x6 < -50) {
-    x6 = 1250;
-  }
-  if (x7 < -50) {
-    x7 = 1250;
-  }
-  if (x8 < -50) {
-    x8 = 1250;
-  }
-  if (x9 < -50) {
-    x9 = 1250;
-  }
-  if (x10 < -50) {
-    x10 = 1250;
-  }
-  if (x11 < -50) {
-    x11 = 1250;
-  }
-  if (x12 < -50) {
-    x12 = 1250;
-  }
-  if (x13 < -50) {
-    x13 = 1250;
-  }
-
-  //code when the lines goes off the screen, bottom line
-
-  if (x14 > 1280) {
-    x14 = -50;
-  }
-  if (x15 > 1280) {
-    x15 = -50;
-  }
-  if (x16 > 1280) {
-    x16 = -50;
-  }
-  if (x17 > 1280) {
-    x17 = -50;
-  }
-  if (x18 > 1280) {
-    x18 = -50;
-  }
-  if (x19 > 1280) {
-    x19 = -50;
-  }
-  if (x20 > 1280) {
-    x20 = -50;
-  }
-  if (x21 > 1280) {
-    x21 = -50;
-  }
-  if (x22 > 1280) {
-    x22 = -50;
-  }
-  if (x23 > 1280) {
-    x23 = -50;
-  }
-  if (x24 > 1280) {
-    x24 = -50;
-  }
-  if (x25 > 1280) {
-    x25 = -50;
-  }
-  if (x26 > 1280) {
-    x26 = -50;
-  }
-
-  //line 2
-  ctx.fillRect(x1, y1, 50, 10);
-  ctx.fillRect(x2, y1, 50, 10);
-  ctx.fillRect(x3, y1, 50, 10);
-  ctx.fillRect(x4, y1, 50, 10);
-  ctx.fillRect(x5, y1, 50, 10);
-  ctx.fillRect(x6, y1, 50, 10);
-  ctx.fillRect(x7, y1, 50, 10);
-  ctx.fillRect(x8, y1, 50, 10);
-  ctx.fillRect(x9, y1, 50, 10);
-  ctx.fillRect(x10, y1, 50, 10);
-  ctx.fillRect(x11, y1, 50, 10);
-  ctx.fillRect(x12, y1, 50, 10);
-  ctx.fillRect(x13, y1, 50, 10);
   
 
 
