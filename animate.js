@@ -43,11 +43,8 @@ function animate() {
     // uiFuction(); (art.js)
 
     // Debug shi:
-<<<<<<< HEAD
-    //console.log("Score:" + gameScore + " Lives:" + lives + " Speed:" + gameSpeed);
-=======
-    console.log("Score:" + gameScore + " Lives:" + lives + " PlayerXY:" + "(" + player.x + "," + player.y + ")" + " Speed:" + gameSpeed);
->>>>>>> refs/remotes/origin/main
+
+    //console.log("Score:" + gameScore + " Lives:" + lives + " PlayerXY:" + "(" + player.x + "," + player.y + ")" + " Speed:" + gameSpeed);
   }
 
   requestAnimationFrame(animate);
@@ -55,5 +52,5 @@ function animate() {
 }
 
 // Start the game
-//animate();
-drawStartMenu();
+animate();
+//drawStartMenu();
