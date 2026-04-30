@@ -19,12 +19,19 @@ function animate() {
     // Add new car every 100 ticks
     if (carTimer > 100) {
       spawnTraffic();
+      SpawnPedestrian();
       carTimer = 0;
+      console.log("100 tick part worked"); // msg doesnt show
     }
 
     enemies.forEach((enemy) => {
       enemy.update();
       enemy.draw(ctx);
+    });
+    enemies.forEach((pedestrian) => {
+      pedestrian.update();
+      pedestrian.draw(ctx);
+      console.log("pedestrian draw and update worked"); //msg doesnt show
     });
 
     checkCollisions();
@@ -33,7 +40,7 @@ function animate() {
     // uiFuction(); (art.js)
 
     // Debug shi:
-    console.log("Score:" + gameScore + " Lives:" + lives + " Speed:" + gameSpeed);
+    //console.log("Score:" + gameScore + " Lives:" + lives + " Speed:" + gameSpeed);
   }
 
   requestAnimationFrame(animate);

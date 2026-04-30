@@ -38,7 +38,7 @@ class Pedestrian {
         this.width = 30;
         this.height = 40;
         this.lane = lane;
-        this.y = PEDESTRIANLANES[lane];
+        this.x = PEDESTRIANLANES[lane];
         this.speed = speed;
         this.direction = direction; // 1 for right, -1 for left
 
@@ -61,5 +61,5 @@ function SpawnPedestrian(){
     const speed = Math.random() * 2 + gameSpeed;
     
     enemies.push(new Pedestrian(randomLaneP, speed, direction));
-    console.log("pedestrian spawned")
+    console.log("pedestrian spawned") // msg doesnt show
 }
