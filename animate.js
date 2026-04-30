@@ -36,7 +36,7 @@ function animate() {
     // uiFuction(); (art.js)
 
     // Debug shi:
-    console.log("Score:" + gameScore + " Lives:" + lives + " Speed:" + gameSpeed);
+    console.log("Score:" + gameScore + " Lives:" + lives + " PlayerXY:" + "(" + player.x + "," + player.y + ")" + " Speed:" + gameSpeed);
   }
 
   requestAnimationFrame(animate);
