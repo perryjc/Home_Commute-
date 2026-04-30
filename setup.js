@@ -11,6 +11,8 @@ let gameScore = 0;
 let savedHighScore = localStorage.getItem('newHighScore') || '0';
 let gameHighScore = parseInt(savedHighScore); // High score As iniger
 let lives = 4;
+let rightPressed = false; // smooth movement
+let leftPressed = false;
 
 //function gameOver() {
 //    gameRunning = false;
@@ -19,26 +21,3 @@ let lives = 4;
 //}
 
 //if (!gameRunning && gameScore <= 5)
-
-// "p" to pause
-// "r" to reset (only if game is paused)
-function handleKeyDown(e){
-    if(e.key === 'p' || e.key === 'P') {
-        if (lives <= 0) {
-            console.log("you dead twin");
-        } else {
-            gameRunning = !gameRunning;
-            drawPauseBackground(); // Pause_menu.js
-        }
-    }
-    if(e.key === 'r' || e.key === 'R') {
-        if(!gameRunning) {
-            location.reload();
-        } else {
-            console.log("Pause game first");
-        }
-    }
-
-}
-
-document.addEventListener('keydown', handleKeyDown);

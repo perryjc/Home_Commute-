@@ -9,6 +9,9 @@ function animate() {
 
     // Draw the Background (art.js)
     drawBackground(ctx); 
+    // smooth side to side
+    if (leftPressed)  player.x -= 7;
+    if (rightPressed) player.x += 7;
 
     // Draw Player
     player.draw(ctx);
@@ -40,7 +43,11 @@ function animate() {
     // uiFuction(); (art.js)
 
     // Debug shi:
+<<<<<<< HEAD
     //console.log("Score:" + gameScore + " Lives:" + lives + " Speed:" + gameSpeed);
+=======
+    console.log("Score:" + gameScore + " Lives:" + lives + " PlayerXY:" + "(" + player.x + "," + player.y + ")" + " Speed:" + gameSpeed);
+>>>>>>> refs/remotes/origin/main
   }
 
   requestAnimationFrame(animate);
@@ -48,4 +55,5 @@ function animate() {
 }
 
 // Start the game
-animate();
+//animate();
+drawStartMenu();
