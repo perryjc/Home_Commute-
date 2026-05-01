@@ -8,6 +8,7 @@ const PEDESTRIANLANES = [600, 800, 1000, 1200] // x coords for lanes
 let gameRunning = false;
 let gameSpeed = 3;
 let gameScore = 0;
+let soberclicks = 0;
 let savedHighScore = localStorage.getItem('newHighScore') || '0';
 let gameHighScore = parseInt(savedHighScore); // High score As iniger
 let lives = 4;
