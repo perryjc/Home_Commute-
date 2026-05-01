@@ -13,7 +13,7 @@
 - [x] make lane lines better
 - [x] Add game over screen
 - [x] add score/lives to pause menu
-- [ ] Create crash indicator (explosion or something)
+- [x] Create crash indicator (explosion or something)
 - [ ] Maybe make car spin out
 - [ ] Make road lines slow down on crash (right now speed is attached to gameScore needs to be a new variable)
 - [x] Lives Looks so bad
