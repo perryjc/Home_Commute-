@@ -1,5 +1,6 @@
 const enemies = [];
 let carTimer = 0;
+let pedestrianTimer = 0;
 
 class Enemy {
     constructor(lane, speed, direction) {
