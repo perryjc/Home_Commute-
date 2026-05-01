@@ -13,6 +13,17 @@ class Enemy {
         
         // Spawn off-screen based on direction
         this.x = (direction === 1) ? -this.width : canvas.width + this.width;
+        //random color
+        const randomCarColor = Math.floor(Math.random()*3)+1; //random number 1-3
+        if (randomCarColor == 1){
+            this.color = "orange";
+        }
+        else if (randomCarColor == 2){
+            this.color = "#1b2192";
+        }
+        else if (randomCarColor == 3){
+            this.color = "rgb(144, 22, 22)";
+        }
     }
 
     update() {
@@ -20,7 +31,7 @@ class Enemy {
     }
 
     draw(ctx) {
-        ctx.fillStyle = "orange";
+        ctx.fillStyle = this.color;
         ctx.fillRect(this.x, this.y, this.width, this.height);
     }
 }
@@ -45,13 +56,24 @@ class Pedestrian {
 
         // Spawn off-screen based on direction
         this.y = (direction === 1) ? -this.width : canvas.width + this.width;
+        //random color
+        const randomColor = Math.floor(Math.random()*3)+1; //random number 1-3
+        if (randomColor == 1){
+            this.color = "#6e4e13";
+        }
+        else if (randomColor == 2){
+            this.color = "#352609";
+        }
+        else if (randomColor == 3){
+            this.color = "#f6e7ca";
+        }
     }
     update() {
         this.y += this.speed * this.direction;
     }
 
     draw(ctx) {
-        ctx.fillStyle = "blue";
+        ctx.fillStyle = this.color;
         ctx.fillRect(this.x, this.y, this.width, this.height);
     }
 }
