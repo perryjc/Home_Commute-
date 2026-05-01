@@ -45,6 +45,160 @@ let z4 = '#ff0000';
 
 
 function drawLines() {
+  //sidewalk
+  ctx.fillStyle = '#D3D3D3';
+  ctx.fillRect(0, 750, 1300, 50);
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(50, 750);
+  ctx.lineTo(50, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(100, 750);
+  ctx.lineTo(100, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(150, 750);
+  ctx.lineTo(150, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(200, 750);
+  ctx.lineTo(200, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(250, 750);
+  ctx.lineTo(250, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(300, 750);
+  ctx.lineTo(300, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(350, 750);
+  ctx.lineTo(350, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(400, 750);
+  ctx.lineTo(400, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(450, 750);
+  ctx.lineTo(450, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(500, 750);
+  ctx.lineTo(500, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(550, 750);
+  ctx.lineTo(550, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(600, 750);
+  ctx.lineTo(600, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(650, 750);
+  ctx.lineTo(650, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(700, 750);
+  ctx.lineTo(700, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(750, 750);
+  ctx.lineTo(750, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(800, 750);
+  ctx.lineTo(800, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(850, 750);
+  ctx.lineTo(850, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(900, 750);
+  ctx.lineTo(900, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(950, 750);
+  ctx.lineTo(950, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(1000, 750);
+  ctx.lineTo(1000, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(1050, 750);
+  ctx.lineTo(1050, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(1100, 750);
+  ctx.lineTo(1100, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(1150, 750);
+  ctx.lineTo(1150, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(1200, 750);
+  ctx.lineTo(1200, 800);
+  ctx.stroke();
+
+  ctx.strokeStyle = '#000000'
+  ctx.beginPath();
+  ctx.moveTo(1250, 750);
+  ctx.lineTo(1250, 800);
+  ctx.stroke();
+
   ctx.strokeStyle = '#ffea00';
   ctx.lineWidth = 5;
   //yellow lines
