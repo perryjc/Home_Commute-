@@ -251,22 +251,6 @@ function drawLines() {
 
 // starting speed of the lines
 
-// top lines
-  x1 -= gameSpeed;
-  x2 -= gameSpeed;
-  x3 -= gameSpeed;
-  x4 -= gameSpeed;
-  x5 -= gameSpeed;
-  x6 -= gameSpeed ;
-  x7 -= gameSpeed ;
-  x8 -= gameSpeed ;
-  x9 -= gameSpeed ;
-  x10 -= gameSpeed ;
-  x11 -= gameSpeed ;
-  x12 -= gameSpeed ;
-  x13 -= gameSpeed ;
-
-// bottom lines
   x14 += gameSpeed ;
   x15 += gameSpeed ;
   x16 += gameSpeed ;
@@ -281,48 +265,8 @@ function drawLines() {
   x25 += gameSpeed;
   x26 += gameSpeed;
 
-// code for when lines goes off the screen, top line
-  if (x1 < -50) {
-    x1 = 1250;
-  }
-  if (x2 < -50) {
-    x2 = 1250;
-  }
-  if (x3 < -50) {
-    x3 = 1250;
-  }
-  if (x4 < -50) {
-    x4 = 1250;
-  }
-  if (x5 < -50) {
-    x5 = 1250;
-  }
-  if (x6 < -50) {
-    x6 = 1250;
-  }
-  if (x7 < -50) {
-    x7 = 1250;
-  }
-  if (x8 < -50) {
-    x8 = 1250;
-  }
-  if (x9 < -50) {
-    x9 = 1250;
-  }
-  if (x10 < -50) {
-    x10 = 1250;
-  }
-  if (x11 < -50) {
-    x11 = 1250;
-  }
-  if (x12 < -50) {
-    x12 = 1250;
-  }
-  if (x13 < -50) {
-    x13 = 1250;
-  }
 
-  //code when the lines goes off the screen, bottom line
+  //code when the lines goes off the screen
 
   if (x14 > 1280) {
     x14 = -50;
@@ -365,20 +309,20 @@ function drawLines() {
   }
 
   //line 2
-  ctx.fillRect(x1, y1, 50, 10);
-  ctx.fillRect(x2, y1, 50, 10);
-  ctx.fillRect(x3, y1, 50, 10);
-  ctx.fillRect(x4, y1, 50, 10);
-  ctx.fillRect(x5, y1, 50, 10);
-  ctx.fillRect(x6, y1, 50, 10);
-  ctx.fillRect(x7, y1, 50, 10);
-  ctx.fillRect(x8, y1, 50, 10);
-  ctx.fillRect(x9, y1, 50, 10);
-  ctx.fillRect(x10, y1, 50, 10);
-  ctx.fillRect(x11, y1, 50, 10);
-  ctx.fillRect(x12, y1, 50, 10);
   ctx.fillRect(x13, y1, 50, 10);
-  
+  ctx.fillRect(x14, y1, 50, 10);
+  ctx.fillRect(x15, y1, 50, 10);
+  ctx.fillRect(x16, y1, 50, 10);
+  ctx.fillRect(x17, y1, 50, 10);
+  ctx.fillRect(x18, y1, 50, 10);
+  ctx.fillRect(x19, y1, 50, 10);
+  ctx.fillRect(x20, y1, 50, 10);
+  ctx.fillRect(x21, y1, 50, 10);
+  ctx.fillRect(x22, y1, 50, 10);
+  ctx.fillRect(x23, y1, 50, 10);
+  ctx.fillRect(x24, y1, 50, 10);
+  ctx.fillRect(x25, y1, 50, 10);
+  ctx.fillRect(x26, y1, 50, 10);
 
 
 // Draw hearts, "score" and "lives"

@@ -2,6 +2,7 @@ function animate() {
   if (gameRunning) {
     gameScore += 1;
     carTimer += 1;
+    pedestrianTimer += 1;
     // make cars faster over time:
     gameSpeed += 0.01;
 
@@ -22,9 +23,12 @@ function animate() {
     // Add new car every 100 ticks
     if (carTimer > 100) {
       spawnTraffic();
-      SpawnPedestrian();
       carTimer = 0;
-      console.log("100 tick part worked"); // msg doesnt show
+    }
+    if (pedestrianTimer > 300){
+      SpawnPedestrian();
+      pedestrianTimer = 0
+      console.log("100 tick part worked");
     }
 
     enemies.forEach((enemy) => {
@@ -34,7 +38,7 @@ function animate() {
     enemies.forEach((pedestrian) => {
       pedestrian.update();
       pedestrian.draw(ctx);
-      console.log("pedestrian draw and update worked"); //msg doesnt show
+      console.log("pedestrian draw and update worked");
     });
 
     checkCollisions();

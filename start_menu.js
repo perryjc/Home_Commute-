@@ -35,14 +35,18 @@ function drawStartMenu() {
   ctx.fillText("Press Enter to Start", 553, 523);
 
   window.addEventListener('keydown', (e) => {
-    if (e.key == "Enter") animate();
-    if (gamerunning && e.key == "Enter") {
-      empty();
+    if (e.key == "Enter"){ 
+      if (!gameRunning) {
+        gameRunning = true;
+        animate(); 
+      } else {
+        empty(); // This is an empty function that does nothing. It is used as a placeholder for the "Start Game" to fix the enter issue.
+      }
     }
   });
 }
 
-function empty(){
-  console.log("Hello Myer, hop off the War Thunder");
+function empty() {
+  console.log("Myer, hop off the War Thunder");
   // This is an empty function that does nothing. It is used as a placeholder for the "Start Game" to fix the enter issue.
 }
