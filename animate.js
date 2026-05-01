@@ -28,7 +28,7 @@ function animate() {
     if (pedestrianTimer > 300){
       SpawnPedestrian();
       pedestrianTimer = 0
-      console.log("100 tick part worked"); // msg doesnt show
+      console.log("100 tick part worked");
     }
 
     enemies.forEach((enemy) => {
@@ -38,7 +38,7 @@ function animate() {
     enemies.forEach((pedestrian) => {
       pedestrian.update();
       pedestrian.draw(ctx);
-      console.log("pedestrian draw and update worked"); //msg doesnt show
+      console.log("pedestrian draw and update worked");
     });
 
     checkCollisions();
