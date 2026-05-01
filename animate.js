@@ -49,6 +49,11 @@ function animate() {
 
     checkCollisions();
 
+    if (explosionTimer > 0) {
+      explosion();
+      explosionTimer -= 1;
+    }
+
     // Add something to Update the UI (score and lives) here:
     // uiFuction(); (art.js)
 

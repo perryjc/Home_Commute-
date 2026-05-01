@@ -14,3 +14,4 @@ let gameHighScore = parseInt(savedHighScore); // High score As iniger
 let lives = 4;
 let rightPressed = false; // smooth movement
 let leftPressed = false;
+let explosionTimer = 0; 

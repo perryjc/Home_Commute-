@@ -28,8 +28,8 @@ function handleHit(index) {
     // bump back
     player.x -= 20;
     
-    // explosion animation    
-    explosion();
+     
+    explosionTimer = 50; 
 
     // slowdown the game after crash
     gameSpeed = gameSpeed / 3;

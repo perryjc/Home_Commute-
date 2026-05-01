@@ -427,10 +427,19 @@ function drawBackground() {
 
 function explosion() {
   if (lives == 3) {
+
+    // red circle around the player
     ctx.fillStyle = '#ff0000';
     ctx.beginPath();
     ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 50, 0, Math.PI * 2);
     ctx.fill();
+
+    //orange explosion
+    ctx.fillStyle = '#ff8000';
+    ctx.beginPath();
+    ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 30, 0, Math.PI * 2);
+    ctx.fill();
+    
     
   }
 
@@ -439,6 +448,12 @@ function explosion() {
     ctx.beginPath();
     ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 70, 0, Math.PI * 2);
     ctx.fill();
+
+    //orange explosion
+    ctx.fillStyle = '#ff8000';
+    ctx.beginPath();
+    ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 50, 0, Math.PI * 2);
+    ctx.fill();
   }
 
   if (lives == 1) {
@@ -446,12 +461,24 @@ function explosion() {
     ctx.beginPath();
     ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 90, 0, Math.PI * 2);
     ctx.fill();
+
+    //orange explosion
+    ctx.fillStyle = '#ff8000';
+    ctx.beginPath();
+    ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 70, 0, Math.PI * 2);
+    ctx.fill();
   }
 
   if (lives == 0) {
     ctx.fillStyle = '#ff0000';
     ctx.beginPath();
     ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 110, 0, Math.PI * 2);
+    ctx.fill();
+
+    //orange explosion
+    ctx.fillStyle = '#ff8000';
+    ctx.beginPath();
+    ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 90, 0, Math.PI * 2);
     ctx.fill();
   }
 }
