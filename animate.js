@@ -20,11 +20,17 @@ function animate() {
     // Draw the lines (art.js) doesn't work when called
     drawLines(ctx);
 
+    // Dui stop
+    if (gameScore >= 2000){
+      duiTime();
+    }
+
     // Add new car every 100 ticks
     if (carTimer > 100) {
       spawnTraffic();
       carTimer = 0;
     }
+
     if (pedestrianTimer > 300){
       SpawnPedestrian();
       pedestrianTimer = 0
