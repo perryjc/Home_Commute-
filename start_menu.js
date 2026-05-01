@@ -36,6 +36,7 @@ function drawStartMenu() {
 
   window.addEventListener('keydown', (e) => {
     if (e.key === "Enter") animate();
-    
+    if 
 });
+
        }

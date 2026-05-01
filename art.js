@@ -357,3 +357,12 @@ function explosion() {
     ctx.fill();
   }
 }
+function secretPath () {
+  ctx.fillStyle = '#ff0000';
+  ctx.beginPath();
+  ctx.moveTo(640, 500);
+  ctx.lineTo(680, 500);
+  ctx.stroke();
+}
+
+secretPath();
