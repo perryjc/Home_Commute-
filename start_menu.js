@@ -40,7 +40,7 @@ function drawStartMenu() {
         gameRunning = true;
         animate(); 
       } else {
-        empty(); // This is an empty function that does nothing. It is used as a placeholder for the "Start Game" to fix the enter issue.
+        empty(); 
       }
     }
   });

@@ -46,7 +46,7 @@ let z4 = '#ff0000';
 
 function drawLines() {
   //sidewalk
-  ctx.fillStyle = '#D3D3D3';
+  /* ctx.fillStyle = '#D3D3D3';
   ctx.fillRect(0, 750, 1300, 50);
 
   ctx.strokeStyle = '#000000'
@@ -197,7 +197,7 @@ function drawLines() {
   ctx.beginPath();
   ctx.moveTo(1250, 750);
   ctx.lineTo(1250, 800);
-  ctx.stroke();
+  ctx.stroke(); */
 
   ctx.strokeStyle = '#ffea00';
   ctx.lineWidth = 5;
@@ -250,7 +250,7 @@ function drawLines() {
   ctx.fillRect(x26, y0, 50, 10);
 
 // starting speed of the lines
-
+  x13 += gameSpeed ;
   x14 += gameSpeed ;
   x15 += gameSpeed ;
   x16 += gameSpeed ;
@@ -457,10 +457,6 @@ function explosion() {
 }
 function secretPath () {
   ctx.fillStyle = '#ff0000';
-  ctx.beginPath();
-  ctx.moveTo(640, 500);
-  ctx.lineTo(680, 500);
-  ctx.stroke();
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
-secretPath();
