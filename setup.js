@@ -13,11 +13,3 @@ let gameHighScore = parseInt(savedHighScore); // High score As iniger
 let lives = 4;
 let rightPressed = false; // smooth movement
 let leftPressed = false;
-
-//function gameOver() {
-//    gameRunning = false;
-//    alert("GAME OVER. SCORE:" + gameScore);
-//    location.reload(); // Restarts the game
-//}
-
-//if (!gameRunning && gameScore <= 5)

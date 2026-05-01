@@ -39,15 +39,15 @@ class Pedestrian {
         this.width = 30;
         this.height = 40;
         this.lane = lane;
-        this.y = PEDESTRIANLANES[lane];
+        this.x = PEDESTRIANLANES[lane];
         this.speed = speed;
         this.direction = direction; // 1 for right, -1 for left
 
         // Spawn off-screen based on direction
-        this.x = (direction === 1) ? -this.width : canvas.width + this.width;
+        this.y = (direction === 1) ? -this.width : canvas.width + this.width;
     }
     update() {
-        this.x += this.speed * this.direction;
+        this.y += this.speed * this.direction;
     }
 
     draw(ctx) {
