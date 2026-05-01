@@ -1,0 +1,16 @@
+name: Publish
+on:
+  push:
+    branches: [main]
+jobs:
+  publish:
+    runs-on: codeberg-tiny
+    steps:
+      - uses: actions/checkout@v5
+      - name: Deploy to Codeberg Pages
+        uses: actions/git-pages@v2
+        with:
+          site: https://ghc_students.codeberg.page/home_commute/
+          token: ${{ forge.token }}
+          source: .
+
