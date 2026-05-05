@@ -62,6 +62,8 @@ function animate() {
     //console.log("Score:" + gameScore + " Lives:" + lives + " PlayerXY:" + "(" + player.x + "," + player.y + ")" + " Speed:" + gameSpeed);
   }
 
+  secretPath();
+
   requestAnimationFrame(animate);
 
 }
