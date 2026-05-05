@@ -514,4 +514,18 @@ function secretPath () {
     if (upPressed) secretY -= 7;
     if (downPressed) secretY += 7;
   }
+
+  // draw house 
+  if (secretpath) {
+    ctx.fillStyle = '#654321';
+    ctx.fillRect(600, 500, 600, 300);
+    ctx.fillStyle = '#000000';
+    ctx.beginPath();
+    ctx.moveTo(600, 500);
+    ctx.lineTo(900, 300);
+    ctx.lineTo(1200, 500);
+    ctx.closePath();
+    ctx.fill();
+    
+  }
 }
