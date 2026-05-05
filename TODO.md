@@ -20,4 +20,5 @@
 - [ ] Make something happen when score > 4000 (difficult but not inpossible)
 - [ ] Make both road lines move the same way
 - [x] Make pedestrians function
-- [ ] Pedistrain and car collision (blood pool?) 
+- [ ] Pedistrain and car collision (blood pool?)
+- [ ] Maybe WASD controls
