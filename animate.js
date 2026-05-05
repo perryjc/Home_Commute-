@@ -31,7 +31,7 @@ function animate() {
       carTimer = 0;
     }
 
-    if (pedestrianTimer > 1){
+    if (pedestrianTimer > 300){
       SpawnPedestrian();
       pedestrianTimer = 0
       console.log("300 tick part worked");
