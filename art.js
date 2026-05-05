@@ -484,6 +484,7 @@ function explosion() {
 }
 function secretPath () {
   ctx.fillStyle = '#ff0000';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillRect(50, 50, 100, 100);
 }
+
 
