@@ -46,9 +46,7 @@ function drawStartMenu() {
   ctx.fillRect(800, 490, 200, 50);
   ctx.fillStyle = "#FFFFFF";
   ctx.font = "20px Arial";
-  ctx.fillText("• Your goal is to dodge the orange cars and blue pedestrians.", 360, 395);
-  ctx.fillText("• The cars speed up the longer you survive.", 360, 425);
-  ctx.fillText("• You have 4 lives and your score increases over time.", 360, 455);
+  ctx.fillText("Press H for Hard", 825, 523);
 
   //Start Button
   ctx.fillStyle = "#000000";
