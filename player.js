@@ -41,8 +41,14 @@ const player = new Player();
 // "p" to pause
 // "r" to reset (only if game is paused)
 window.addEventListener('keydown', (e) => {
-    if (e.key === "ArrowUp") player.moveUp();
-    if (e.key === "ArrowDown") player.moveDown();
+    if (e.key === "ArrowUp") {
+        if (gameRunning) player.moveUp();
+        upPressed = true;
+    }
+    if (e.key === "ArrowDown") {
+        if (gameRunning) player.moveDown();
+        downPressed = true;
+    }
     // prevent scrooling
     if (["ArrowUp", "ArrowDown", "Space"].includes(e.key)) {
         e.preventDefault();
@@ -70,4 +76,6 @@ window.addEventListener('keydown', (e) => {
 window.addEventListener('keyup', (e) => {
     if (e.key === "ArrowLeft")  leftPressed = false;
     if (e.key === "ArrowRight") rightPressed = false;
+    if (e.key === "ArrowUp") upPressed = false;
+    if (e.key === "ArrowDown") downPressed = false;
 });

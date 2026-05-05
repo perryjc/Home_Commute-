@@ -43,6 +43,13 @@ let z2 = '#ff0000';
 let z3 = '#ff0000';
 let z4 = '#ff0000';
 
+// x and y for the secret path
+let secretX = 600;
+let secretY = 400;
+
+let upPressed = false;
+let downPressed = false;
+
 
 function drawLines() {
   //sidewalk
@@ -483,8 +490,28 @@ function explosion() {
   }
 }
 function secretPath () {
+  let secretpath = false;
   ctx.fillStyle = '#ff0000';
-  ctx.fillRect(50, 50, 100, 100);
+  ctx.fillRect(1260, 230, 20, 100);
+
+  if (player.x + player.width > 1260 && player.x < 1280 && player.y < 330 && player.y + player.height > 230) {
+    ctx.fillStyle = '#3c4245';
+    ctx.fillRect(0, 0, 1280, 800);
+    secretpath = true;
+    gameRunning = false;
+  }
+
+  //draw player model in secret path
+  if (secretpath) {
+    ctx.fillStyle = '#9000ff';
+    ctx.fillRect(secretX, secretY, 30, 50);
+  }
+
+  // player movement in secret path
+  if (secretpath) {
+    if (leftPressed)  secretX -= 7;
+    if (rightPressed) secretX += 7;
+    if (upPressed) secretY -= 7;
+    if (downPressed) secretY += 7;
+  }
 }
-
-
