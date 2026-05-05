@@ -31,10 +31,10 @@ function animate() {
       carTimer = 0;
     }
 
-    if (pedestrianTimer > 300){
+    if (pedestrianTimer > 1){
       SpawnPedestrian();
       pedestrianTimer = 0
-      console.log("100 tick part worked");
+      console.log("300 tick part worked");
     }
 
     enemies.forEach((enemy) => {
