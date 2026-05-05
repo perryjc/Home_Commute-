@@ -1,4 +1,5 @@
 const enemies = [];
+const Pedestrians = [];
 let carTimer = 0;
 let pedestrianTimer = 0;
 
@@ -53,6 +54,7 @@ class Pedestrian {
         this.x = PEDESTRIANLANES[lane];
         this.speed = speed;
         this.direction = direction; // 1 for right, -1 for left
+        this.type = "pedestrian"
 
         // Spawn off-screen based on direction
         this.y = (direction === 1) ? -this.width : canvas.width + this.width;

@@ -17,6 +17,16 @@ function checkCollisions() {
 }
 
 function handleHit(index) {
+     let hitEnemy = enemies[index];
+     if (hitEnemy.type === "pedestrian") {
+        console.log("You hit a pedestrian!");
+        ctx.fillStyle = 'red'; 
+        ctx.fillRect(200, 200, 300, 300);
+        console.log("sqaure spawned");
+
+     }
+
+
     console.log("CRASH!");
 
     // Remove the dead car
@@ -28,7 +38,6 @@ function handleHit(index) {
     // bump back
     player.x -= 20;
     
-     
     explosionTimer = 50; 
 
     // slowdown the game after crash
@@ -38,5 +47,4 @@ function handleHit(index) {
     if (lives <= 0) {
         gameOver();
     }
-
 }

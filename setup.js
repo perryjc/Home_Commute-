@@ -4,8 +4,20 @@ const ctx = canvas.getContext("2d");
 //Defineing Objects
 //car is the enemy
 const LANES = [100, 250, 450, 650]; // Y-coordinates for the Lanes
-const PEDESTRIANLANES = [600, 800, 1000, 1200] // x coords for lanes
+//random pedestrian lane
+let min = 10;
+let max = 1270;
+const NumberOfLanes = 100
+const PEDESTRIANLANES = Array.from({ length: NumberOfLanes }, () => 
+    Math.floor(Math.random() * (max - min + 1)) + min
+);
+
 let gameRunning = false;
+let duiActive = false;
+let duiClicks = 0;
+let duiTimer = 0;
+let duiSeconds = 0;
+let duiRemaining = 0;
 let gameSpeed = 3;
 let gameScore = 0;
 let soberclicks = 0;

@@ -34,7 +34,7 @@ function animate() {
     if (pedestrianTimer > 300){
       SpawnPedestrian();
       pedestrianTimer = 0
-      console.log("100 tick part worked");
+      console.log("300 tick part worked");
     }
 
     enemies.forEach((enemy) => {
@@ -61,6 +61,8 @@ function animate() {
 
     //console.log("Score:" + gameScore + " Lives:" + lives + " PlayerXY:" + "(" + player.x + "," + player.y + ")" + " Speed:" + gameSpeed);
   }
+
+  secretPath();
 
   requestAnimationFrame(animate);
 
