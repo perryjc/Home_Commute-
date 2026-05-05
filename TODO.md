@@ -17,7 +17,6 @@
 - [ ] Maybe make car spin out
 - [ ] Make road lines slow down on crash (right now speed is attached to gameScore needs to be a new variable)
 - [x] Lives Looks so bad
-- [ ] Add side walk
 - [ ] Make something happen when score > 4000 (difficult but not inpossible)
 - [ ] Make both road lines move the same way
 - [ ] Make pedestrians function
