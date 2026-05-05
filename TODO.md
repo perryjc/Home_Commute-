@@ -19,5 +19,5 @@
 - [x] Lives Looks so bad
 - [ ] Make something happen when score > 4000 (difficult but not inpossible)
 - [ ] Make both road lines move the same way
-- [ ] Make pedestrians function
+- [x] Make pedestrians function
 - [ ] Pedistrain and car collision (blood pool?) 

@@ -42,6 +42,9 @@ function drawStartMenu() {
       } else {
         empty(); 
       }
+      if (e.key == "Enter" && !gameRunning) {
+        empty();
+      }
     }
   });
 }
