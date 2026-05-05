@@ -10,6 +10,7 @@ let duiActive = false;
 let duiClicks = 0;
 let duiTimer = 0;
 let duiSeconds = 0;
+let duiRemaining = 0;
 let gameSpeed = 3;
 let gameScore = 0;
 let soberclicks = 0;
