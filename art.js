@@ -46,7 +46,6 @@ let z4 = '#ff0000';
 // x and y for the secret path
 let secretX = 600;
 let secretY = 400;
-
 let upPressed = false;
 let downPressed = false;
 
@@ -433,7 +432,7 @@ function drawBackground() {
 }
 
 function explosion() {
-  if (lives == 3) {
+  if (lives == 3 && ) {
 
     // red circle around the player
     ctx.fillStyle = '#ff0000';
@@ -450,7 +449,7 @@ function explosion() {
     
   }
 
-  if (lives == 2) {
+  if (lives == 2 && ) {
     ctx.fillStyle = '#ff0000';
     ctx.beginPath();
     ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 70, 0, Math.PI * 2);
@@ -463,7 +462,7 @@ function explosion() {
     ctx.fill();
   }
 
-  if (lives == 1) {
+  if (lives == 1 && ) {
     ctx.fillStyle = '#ff0000';
     ctx.beginPath();
     ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 90, 0, Math.PI * 2);
@@ -501,22 +500,15 @@ function secretPath () {
     gameRunning = false;
   }
 
-  //draw player model in secret path
-  if (secretpath) {
-    ctx.fillStyle = '#9000ff';
-    ctx.fillRect(secretX, secretY, 30, 50);
-  }
-
-  // player movement in secret path
-  if (secretpath) {
-    if (leftPressed)  secretX -= 7;
-    if (rightPressed) secretX += 7;
-    if (upPressed) secretY -= 7;
-    if (downPressed) secretY += 7;
-  }
 
   // draw house 
   if (secretpath) {
+    //draw pathway
+    ctx.fillStyle = '#2b1d00';
+    ctx.fillRect(215, 290, 100, 510);
+    ctx.fillStyle = '#2b1d00';
+    ctx.fillRect(215, 700, 360, 100);
+    // draw house
     ctx.fillStyle = '#654321';
     ctx.fillRect(600, 500, 600, 300);
     ctx.fillStyle = '#000000';
@@ -526,18 +518,45 @@ function secretPath () {
     ctx.lineTo(1200, 500);
     ctx.closePath();
     ctx.fill();
+
     // draw windows
-    ctx.fillStyle = 'blue';
+    ctx.fillStyle = '#fffc42';
     ctx.fillRect(700, 600, 100, 100);
     ctx.fillRect(1000, 600, 100, 100);
+
+    // lines on the windows
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(750, 600);
+    ctx.lineTo(750, 700);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(700, 650);
+    ctx.lineTo(800, 650);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(1050, 600);
+    ctx.lineTo(1050, 700);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(1000, 650);
+    ctx.lineTo(1100, 650);
+    ctx.stroke();
+
     //draw door
     ctx.fillStyle = 'brown';
     ctx.fillRect(850, 650, 100, 150);
+
     //draw dooor knob
     ctx.fillStyle = 'yellow';
     ctx.beginPath();
     ctx.arc(930, 725, 10, 0, Math.PI * 2);
     ctx.fill();
+
     // draw car
     ctx.fillStyle = 'black';
     ctx.fillRect(200, 180, 25, 25);
@@ -547,9 +566,16 @@ function secretPath () {
     ctx.fillStyle = 'green';
     ctx.fillRect(200, 200, 120, 60);
 
-    //draw pathway
-    ctx.fillStyle = '#2b1d00';
-    ctx.fillRect(300, 500, 200, 100);
+    // player 
+    ctx.fillStyle = '#9000ff';
+    ctx.fillRect(secretX, secretY, 30, 50);
 
+    // player movement in secret path
+    if (leftPressed)  secretX -= 7;
+    if (rightPressed) secretX += 7;
+    if (upPressed) secretY -= 7;
+    if (downPressed) secretY += 7;
+
+    
   }
 }
