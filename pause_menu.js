@@ -1,4 +1,5 @@
 function drawPauseBackground() {
+  pauseMenuOpen = true;
   ctx.fillStyle = '#FFEFD5'
   ctx.fillRect(320, 150, 640, 400);
   ctx.font = "30px Arial"

@@ -526,6 +526,30 @@ function secretPath () {
     ctx.lineTo(1200, 500);
     ctx.closePath();
     ctx.fill();
-    
+    // draw windows
+    ctx.fillStyle = 'blue';
+    ctx.fillRect(700, 600, 100, 100);
+    ctx.fillRect(1000, 600, 100, 100);
+    //draw door
+    ctx.fillStyle = 'brown';
+    ctx.fillRect(850, 650, 100, 150);
+    //draw dooor knob
+    ctx.fillStyle = 'yellow';
+    ctx.beginPath();
+    ctx.arc(930, 725, 10, 0, Math.PI * 2);
+    ctx.fill();
+    // draw car
+    ctx.fillStyle = 'black';
+    ctx.fillRect(200, 180, 25, 25);
+    ctx.fillRect(200, 255, 25, 25);
+    ctx.fillRect(295, 180, 25, 25);
+    ctx.fillRect(295, 255, 25, 25);
+    ctx.fillStyle = 'green';
+    ctx.fillRect(200, 200, 120, 60);
+
+    //draw pathway
+    ctx.fillStyle = '#2b1d00';
+    ctx.fillRect(300, 500, 200, 100);
+
   }
 }
