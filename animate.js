@@ -3,8 +3,11 @@ function animate() {
     gameScore += 1;
     carTimer += 1;
     pedestrianTimer += 1;
+    bloodTimer += 1;
     // make cars faster over time:
     gameSpeed += 0.01;
+    
+
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -33,7 +36,7 @@ function animate() {
 
     if (pedestrianTimer > 300){
       SpawnPedestrian();
-      pedestrianTimer = 0
+      pedestrianTimer = 0;
       console.log("300 tick part worked");
     }
 
@@ -52,6 +55,12 @@ function animate() {
     if (explosionTimer > 0) {
       explosion();
       explosionTimer -= 1;
+    }
+
+    if (bloodTimer > 0) {
+      Blood();
+      console.log("blood timer reached 200")
+      bloodTimer -= 1;
     }
 
     // Add something to Update the UI (score and lives) here:

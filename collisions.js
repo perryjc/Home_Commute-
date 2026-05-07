@@ -16,15 +16,22 @@ function checkCollisions() {
     }
 }
 
+function Blood() {
+    ctx.fillStyle = '#8e0a0a';
+    ctx.beginPath();
+    ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 50, 0, Math.PI * 2);
+    ctx.fill();
+    console.log("blood spawned");
+}
+
 function handleHit(index) {
      let hitEnemy = enemies[index];
      if (hitEnemy.type === "pedestrian") {
         console.log("You hit a pedestrian!");
-        ctx.fillStyle = 'red'; 
-        ctx.fillRect(200, 200, 300, 300);
-        console.log("sqaure spawned");
-
+        Blood();
+        blood = true
      }
+
 
 
     console.log("CRASH!");
