@@ -11,11 +11,17 @@ function duiTime() {
 function drawDuiScreen() {
     ctx.fillStyle = '#000000';
     ctx.fillRect(240, 100, 800, 550);
-    // Game Over text
+    // Dui check text
     ctx.font = "bold 95px Arial";
     ctx.textAlign = 'center';
     ctx.fillStyle = "#f31212";
-    ctx.fillText("DUI CHECK", canvas.width / 2, 200);
+    ctx.fillText("! DUI CHECK !", canvas.width / 2, 200);
+
+    // Spam space text
+    ctx.font = "bold 70px Arial";
+    ctx.textAlign = 'center';
+    ctx.fillStyle = "#f31212";
+    ctx.fillText("CLICK SPACEBAR", canvas.width / 2, 280);
 
     // button:
     // ctx.font = "30px Arial";
@@ -30,12 +36,12 @@ function drawDuiScreen() {
     // timer text
     ctx.font = "bold 50px Arial";
     ctx.fillStyle = "#f31212";
-    ctx.fillText("TIME LEFT", 400, 350);
+    ctx.fillText("TIME LEFT:", 420, 450);
 
     // timer
     ctx.font = "bold 50px Arial";
     ctx.fillStyle = "#f31212";
-    ctx.fillText("0:0" + duiRemaining, 400, 450);
+    ctx.fillText("0:0" + duiRemaining, 420, 500);
 
     // High score:
     // ctx.font = "30px Arial";

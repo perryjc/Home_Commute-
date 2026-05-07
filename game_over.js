@@ -1,6 +1,6 @@
 function gameOver(){
     gameRunning = !gameRunning;
-    gameOver = true;
+    gameOverHappened = true;
     ctx.fillStyle = '#000000';
     ctx.fillRect(320, 150, 640, 400);
     if (gameScore >= gameHighScore) {
