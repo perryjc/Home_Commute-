@@ -58,14 +58,11 @@ function drawStartMenu() {
   
   window.addEventListener('keydown', (e) => {
     if (e.key == "Enter"){ 
-      if (!gameRunning) {
+      if (!gameRunning && !gameOver && !duiActive) {
         gameRunning = true;
         animate(); 
       } else {
         empty(); 
-      }
-      if (e.key == "Enter" && !gameRunning) {
-        empty();
       }
     }
   });
