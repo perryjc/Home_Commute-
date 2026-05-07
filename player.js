@@ -68,6 +68,13 @@ window.addEventListener('keydown', (e) => {
             console.log("Pause game first");
         }
     }
+    if (e.code === 'Space') {
+        if (quickTimeActive) {
+            duiClicks += 1;
+        } else {
+            console.log("spacebar");
+        }
+    }
     // Testing State based movement (smooth)
     if (e.key === "ArrowLeft")  leftPressed = true;
     if (e.key === "ArrowRight") rightPressed = true;

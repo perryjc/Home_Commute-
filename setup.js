@@ -14,6 +14,7 @@ const PEDESTRIANLANES = Array.from({ length: NumberOfLanes }, () =>
 
 let gameRunning = false;
 let duiActive = false;
+let quickTimeActive = false;
 let duiClicks = 0;
 let duiTimer = 0;
 let duiSeconds = 0;

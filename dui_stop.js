@@ -3,6 +3,7 @@ function duiTime() {
     console.log("dui stop");
     duiRemaining = 5; // How long player has to finish (sec)
     duiActive = true;
+    quickTimeActive = true;
     gameRunning = !gameRunning;
     duiLoop();
 }
@@ -17,9 +18,14 @@ function drawDuiScreen() {
     ctx.fillText("DUI CHECK", canvas.width / 2, 200);
 
     // button:
-    ctx.font = "30px Arial";
+    // ctx.font = "30px Arial";
+    // ctx.fillStyle = "#f31212";
+    // ctx.fillRect(800, 400, 100, 50);
+
+    // Click counter
+    ctx.font = "bold 50px Arial";
     ctx.fillStyle = "#f31212";
-    ctx.fillRect(800, 400, 100, 50);
+    ctx.fillText(duiClicks, 700, 450);
 
     // timer text
     ctx.font = "bold 50px Arial";
@@ -56,8 +62,10 @@ function duiLoop(){
         }
 
         if (duiRemaining <= 0) {
+            quickTimeActive = false
             // Put in function to see win or loose
         } else {
+            quickTimeActive = true
             // keep going
         }
     }
