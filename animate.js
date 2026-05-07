@@ -3,7 +3,7 @@ function animate() {
     gameScore += 1;
     carTimer += 1;
     pedestrianTimer += 1;
-    bloodTimer += 1;
+    //bloodTimer += 1;
     // make cars faster over time:
     gameSpeed += 0.01;
     
@@ -57,11 +57,11 @@ function animate() {
       explosionTimer -= 1;
     }
 
-    if (bloodTimer > 0) {
-      Blood();
-      console.log("blood timer reached 200")
-      bloodTimer -= 1;
-    }
+    //if (bloodTimer > 0) {
+      //Blood();
+      //console.log("blood timer reached 200")
+      //bloodTimer -= 1;
+    //}
 
     // Add something to Update the UI (score and lives) here:
     // uiFuction(); (art.js)
