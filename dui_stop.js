@@ -31,7 +31,7 @@ function drawDuiScreen() {
     // Click counter text
     ctx.font = "bold 50px Arial";
     ctx.fillStyle = "#f31212";
-    ctx.fillText("CLICKES:", 850, 450);
+    ctx.fillText("CLICKS:", 850, 450);
 
     // Click counter
     ctx.font = "bold 50px Arial";
