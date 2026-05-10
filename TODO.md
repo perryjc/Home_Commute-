@@ -5,7 +5,7 @@
 - [x] Add start menu
 - [x] Add pause menu
 - [x] At speed up feture
-- [ ] Add difficulty selector (game speed faster)
+- [x] Add difficulty selector (game speed faster)
 - [x] Add high score system
 - [x] Add menu and instructions
 - [x] MAKE IT NOT LOOK LIKE SOMEONE GAVE A 5 YEAR-OLD ACCESS TO MICROSOFT PAINT
@@ -20,4 +20,5 @@
 - [ ] Make something happen when score > 4000 (difficult but not inpossible)
 - [ ] Make both road lines move the same way
 - [x] Make pedestrians function
-- [ ] Pedistrain and car collision (blood pool?) 
+- [ ] Pedistrain and car collision (blood pool?)
+- [ ] Maybe WASD controls

@@ -57,15 +57,45 @@ function drawStartMenu() {
 
   
   window.addEventListener('keydown', (e) => {
+    if(e.key === 'e' || e.key === 'E') {
+      if (!gameRunning && !gameOverHappened && !duiActive && !pauseMenuOpen) {
+        spawnRate = 50; // spawns 1 car every ~0.75 seconds
+        gameRunning = true;
+        animate();
+        // logic for easy mode 
+      } else {
+        empty(); 
+      }
+    }
+
+    if(e.key === 'm' || e.key === 'M') {
+      if (!gameRunning && !gameOverHappened && !duiActive && !pauseMenuOpen) {
+        spawnRate = 100; // spawns 1 car every ~1.5 seconds
+        gameRunning = true;
+        animate();
+        // logic for medium mode 
+      } else {
+        empty(); 
+      }
+    }
+
+    if(e.key === 'h' || e.key === 'H') {
+      if (!gameRunning && !gameOverHappened && !duiActive && !pauseMenuOpen) {
+        spawnRate = 150; // spawns 1 car every ~2.25 seconds
+        gameRunning = true;
+        animate();
+        // logic for hard mode 
+      } else {
+        empty(); 
+      }
+    }
+
     if (e.key == "Enter"){ 
-      if (!gameRunning) {
+      if (!gameRunning && !gameOverHappened && !duiActive && !pauseMenuOpen) {
         gameRunning = true;
         animate(); 
       } else {
         empty(); 
-      }
-      if (e.key == "Enter" && !gameRunning) {
-        empty();
       }
     }
   });

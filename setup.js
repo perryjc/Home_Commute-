@@ -13,7 +13,11 @@ const PEDESTRIANLANES = Array.from({ length: NumberOfLanes }, () =>
 );
 
 let gameRunning = false;
+let gameOverHappened = false;
 let duiActive = false;
+let pauseMenuOpen = false;
+let quickTimeActive = false;
+let spawnRate = 100; // deafult, spawn 1 car every 100 ticks (~1.5 seconds)
 let duiClicks = 0;
 let duiTimer = 0;
 let duiSeconds = 0;

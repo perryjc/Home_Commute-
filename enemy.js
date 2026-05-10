@@ -2,6 +2,9 @@ const enemies = [];
 const Pedestrians = [];
 let carTimer = 0;
 let pedestrianTimer = 0;
+//let bloodTimer = 200;
+
+//let blood = false
 
 class Enemy {
     constructor(lane, speed, direction) {
