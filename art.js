@@ -46,6 +46,10 @@ let z4 = '#ff0000';
 // x and y for the secret path
 let secretX = 600;
 let secretY = 400;
+let secretPathActive = false;
+let secretEntranceActive = false;
+let secretEntranceTimer = 0;
+let secretEntranceX = 1260; // Random entrance position
 let upPressed = false;
 let downPressed = false;
 
@@ -432,7 +436,7 @@ function drawBackground() {
 }
 
 function explosion() {
-  if (lives == 3 && ) {
+  if (lives == 3) {
 
     // red circle around the player
     ctx.fillStyle = '#ff0000';
@@ -449,7 +453,7 @@ function explosion() {
     
   }
 
-  if (lives == 2 && ) {
+  if (lives == 2) {
     ctx.fillStyle = '#ff0000';
     ctx.beginPath();
     ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 70, 0, Math.PI * 2);
@@ -462,7 +466,7 @@ function explosion() {
     ctx.fill();
   }
 
-  if (lives == 1 && ) {
+  if (lives == 1) {
     ctx.fillStyle = '#ff0000';
     ctx.beginPath();
     ctx.arc(player.x + player.width / 2, player.y + player.height / 2, 90, 0, Math.PI * 2);
@@ -489,20 +493,42 @@ function explosion() {
   }
 }
 function secretPath () {
-  let secretpath = false;
-  ctx.fillStyle = '#ff0000';
-  ctx.fillRect(1260, 230, 20, 100);
+  if (!secretPathActive) {
+    if (!secretEntranceActive) {
+      if (secretEntranceTimer <= 0) {
+        if (Math.random() < 0.008) {
+          secretEntranceActive = true;
+          // Randomize entrance position
+          secretEntranceX = Math.random() < 0.5 ? 1260 : Math.floor(Math.random() * (1280 - 20)); // Right side or random
+        } else {
+          secretEntranceTimer = 300 + Math.floor(Math.random() * 900);
+        }
+      } else {
+        secretEntranceTimer -= 1;
+      }
+    }
 
-  if (player.x + player.width > 1260 && player.x < 1280 && player.y < 330 && player.y + player.height > 230) {
-    ctx.fillStyle = '#3c4245';
-    ctx.fillRect(0, 0, 1280, 800);
-    secretpath = true;
-    gameRunning = false;
+    if (secretEntranceActive) {
+      ctx.fillStyle = '#ff0000';
+      ctx.fillRect(secretEntranceX, 230, 20, 100);
+
+      if (player.x + player.width > secretEntranceX && player.x < secretEntranceX + 20 && player.y < 330 && player.y + player.height > 230) {
+        secretPathActive = true;
+        secretEntranceActive = false;
+        secretEntranceTimer = 1200 + Math.floor(Math.random() * 1200);
+        gameRunning = false;
+        // Randomize player spawn position in secret path
+        secretX = Math.floor(Math.random() * (1280 - 30)); 
+        secretY = Math.floor(Math.random() * (800 - 50)); 
+      }
+    }
   }
 
+  if (secretPathActive) {
+    ctx.fillStyle = '#3c4245';
+    ctx.fillRect(0, 0, 1280, 800);
 
-  // draw house 
-  if (secretpath) {
+    // draw house
     //draw pathway
     ctx.fillStyle = '#2b1d00';
     ctx.fillRect(215, 290, 100, 510);
@@ -576,6 +602,19 @@ function secretPath () {
     if (upPressed) secretY -= 7;
     if (downPressed) secretY += 7;
 
-    
+    // house door collision exits secret path
+    if (secretX + 30 > 850 && secretX < 950 && secretY + 50 > 650 && secretY < 800) {
+      if (lives < 4) {
+        lives = 4;
+      } else {
+        gameScore += 5000;
+      }
+      secretPathActive = false;
+      gameRunning = true;
+      player.laneIndex = 1;
+      player.x = 600;
+      player.y = LANES[player.laneIndex];
+    }
+
   }
 }
