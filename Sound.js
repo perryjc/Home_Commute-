@@ -1,4 +1,4 @@
-let myMusic = new sound("music.wav");
+let myMusic = new sound("songame.wav");
 
 function sound(src) {
   this.sound = document.createElement("audio");

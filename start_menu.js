@@ -23,9 +23,10 @@ function drawStartMenu() {
   ctx.font = "24px Arial";
   ctx.fillText("Object of the Game", 360, 265);
   ctx.font = "20px Arial";
-  ctx.fillText("• Your goal is to dodge the orange cars and blue pedestrians.", 360, 295);
+  ctx.fillText("• Your goal is to dodge the cars and the pedestrians.", 360, 295);
   ctx.fillText("• The cars speed up the longer you survive.", 360, 325);
   ctx.fillText("• You have 4 lives and your score increases over time.", 360, 355);
+  ctx.fillText("• Don't forget about the secret path! Could lead to a surprise!", 360, 385);
 
   //Easy Dificulty
   ctx.fillStyle = "#000000";
@@ -49,11 +50,11 @@ function drawStartMenu() {
   ctx.fillText("Press H for Hard", 825, 523);
 
   //Start Button
-  ctx.fillStyle = "#000000";
+  /*ctx.fillStyle = "#000000";
   ctx.fillRect(565, 390, 200, 50);
   ctx.fillStyle = "#FFFFFF";
   ctx.font = "20px Arial";
-  ctx.fillText("Press Enter to Start", 575, 423);
+  ctx.fillText("Press Enter to Start", 575, 423); */
 
   
   window.addEventListener('keydown', (e) => {
@@ -102,6 +103,6 @@ function drawStartMenu() {
 }
 
 function empty() {
-  console.log("Fuck You");
+  console.log("Empty");
   // This is an empty function that does nothing. It is used as a placeholder for the "Start Game" to fix the enter issue.
 }
