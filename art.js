@@ -610,7 +610,7 @@ function secretPath () {
       if (lives < 4) {
         lives = 4;
       } else {
-        gameScore += 1500;
+        gameScore += 2250;
       }
       secretPathActive = false;
       gameRunning = true;
