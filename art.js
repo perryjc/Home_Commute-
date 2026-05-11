@@ -49,7 +49,7 @@ let secretY = 400;
 let secretPathActive = false;
 let secretEntranceActive = false;
 let secretEntranceTimer = 0;
-let secretEntranceX = 1260; // Random entrance position
+let secretEntranceX = 1260; 
 let upPressed = false;
 let downPressed = false;
 
@@ -496,13 +496,11 @@ function secretPath () {
   if (!secretPathActive) {
     if (!secretEntranceActive) {
       if (secretEntranceTimer <= 0) {
-        if (Math.random() < 0.008) {
+        if (Math.random() < 0.5) { // 50% chance to spawn entrance
           secretEntranceActive = true;
-          // Randomize entrance position
-          secretEntranceX = Math.random() < 0.5 ? 1260 : Math.floor(Math.random() * (1280 - 20)); // Right side or random
-        } else {
-          secretEntranceTimer = 300 + Math.floor(Math.random() * 900);
+          secretEntranceX = 1260;
         }
+        secretEntranceTimer = 1500; // it bassically choses if it happens or not every 1500 with 50% chance
       } else {
         secretEntranceTimer -= 1;
       }
@@ -517,9 +515,9 @@ function secretPath () {
         secretEntranceActive = false;
         secretEntranceTimer = 1200 + Math.floor(Math.random() * 1200);
         gameRunning = false;
-        // Randomize player spawn position in secret path
-        secretX = Math.floor(Math.random() * (1280 - 30)); 
-        secretY = Math.floor(Math.random() * (800 - 50)); 
+        // Fixed player spawn position in secret path
+        secretX = 600;
+        secretY = 400; 
       }
     }
   }
@@ -529,6 +527,11 @@ function secretPath () {
     ctx.fillRect(0, 0, 1280, 800);
 
     // draw house
+
+    // some text for the secret path
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '20px Nunito Sans';
+    ctx.fillText("You found your way back home! Go to your wife and kids, but don't forget to go back to the road!", 450, 200);
     //draw pathway
     ctx.fillStyle = '#2b1d00';
     ctx.fillRect(215, 290, 100, 510);
@@ -602,12 +605,12 @@ function secretPath () {
     if (upPressed) secretY -= 7;
     if (downPressed) secretY += 7;
 
-    // house door collision exits secret path
+
     if (secretX + 30 > 850 && secretX < 950 && secretY + 50 > 650 && secretY < 800) {
       if (lives < 4) {
         lives = 4;
       } else {
-        gameScore += 5000;
+        gameScore += 1500;
       }
       secretPathActive = false;
       gameRunning = true;
@@ -618,3 +621,12 @@ function secretPath () {
 
   }
 }
+// tester
+window.addEventListener('keydown', (e) => {
+  if (e.key === '0') {
+    secretPathActive = true;
+    gameRunning = false;
+    secretX = 600;
+    secretY = 400;
+  }
+});
