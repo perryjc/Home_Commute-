@@ -59,7 +59,7 @@ function drawStartMenu() {
   window.addEventListener('keydown', (e) => {
     if(e.key === 'e' || e.key === 'E') {
       if (!gameRunning && !gameOverHappened && !duiActive && !pauseMenuOpen) {
-        spawnRate = 50; // spawns 1 car every ~0.75 seconds
+        spawnRate = 150; // spawns 1 car every ~2.25 seconds
         gameRunning = true;
         animate();
         // logic for easy mode 
@@ -81,7 +81,7 @@ function drawStartMenu() {
 
     if(e.key === 'h' || e.key === 'H') {
       if (!gameRunning && !gameOverHappened && !duiActive && !pauseMenuOpen) {
-        spawnRate = 150; // spawns 1 car every ~2.25 seconds
+        spawnRate = 50; // spawns 1 car every ~0.75 seconds
         gameRunning = true;
         animate();
         // logic for hard mode 
