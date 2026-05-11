@@ -77,14 +77,14 @@ function duiLoop(){
             duiActive = false;
             if (duiClicks >= 25) {
                 gameRunning = true;
+                duiActive = false;
             } else {
-                gameRunning = true;
+                gameRunning = false;
                 ctx.clearRect(240, 100, 800, 550);
                 duiGameOver();
             }
             // Put in function to see win or loose
         } else {
-            quickTimeActive = true
             // keep going
         }
     }
