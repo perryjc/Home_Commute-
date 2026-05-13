@@ -48,7 +48,7 @@ let secretX = 600;
 let secretY = 400;
 let secretPathActive = false;
 let secretEntranceActive = false;
-let secretEntranceTimer = 0;
+let secretEntranceTimer = 1500;
 let secretEntranceX = 1260; 
 let upPressed = false;
 let downPressed = false;
@@ -610,7 +610,7 @@ function secretPath () {
       if (lives < 4) {
         lives = 4;
       } else {
-        gameScore += 2250;
+          gameScore += 1500;
       }
       secretPathActive = false;
       gameRunning = true;
