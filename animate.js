@@ -24,7 +24,7 @@ function animate() {
     drawLines(ctx);
 
     // Dui stop
-    if (gameScore >= 2000){
+    if (gameScore >= 2000 && gameScore <= 2001){
       duiTime();
     }
 

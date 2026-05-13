@@ -4,7 +4,7 @@ function duiTime() {
     duiRemaining = 5; // How long player has to finish (sec)
     duiActive = true;
     quickTimeActive = true;
-    gameRunning = !gameRunning;
+    gameRunning = false;
     duiLoop();
 }
 
@@ -75,16 +75,16 @@ function duiLoop(){
         if (duiRemaining <= 0) {
             quickTimeActive = false;
             duiActive = false;
-            if (duiClicks >= 25) {
+            if (duiClicks >= 20) {
                 gameRunning = true;
+                duiActive = false;
             } else {
-                gameRunning = true;
+                gameRunning = false;
                 ctx.clearRect(240, 100, 800, 550);
                 duiGameOver();
             }
             // Put in function to see win or loose
         } else {
-            quickTimeActive = true
             // keep going
         }
     }
