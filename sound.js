@@ -16,4 +16,15 @@ function sound(src) {
   }
 }
 
-myMusic.play();
+function startMusicOnFirstInteraction() {
+    myMusic.play();
+    // Remove listeners after first interaction
+    document.removeEventListener('click', startMusicOnFirstInteraction);
+    document.removeEventListener('keydown', startMusicOnFirstInteraction);
+    document.removeEventListener('touchstart', startMusicOnFirstInteraction);
+}
+
+// Wait for user interaction
+document.addEventListener('click', startMusicOnFirstInteraction);
+document.addEventListener('keydown', startMusicOnFirstInteraction);
+document.addEventListener('touchstart', startMusicOnFirstInteraction);
